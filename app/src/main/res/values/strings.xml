@@ -23,4 +23,82 @@
         <item>Other</item>
     </string-array>
 
+    <string name="no_value">no value</string>
+    <string name="select_device">Select a device to connect to</string>
+    <string name="label_preferences">Preferences</string>
+    <string name="label_connect">Connect Sensor</string>
+    <string name="title_paired_devices">Paired devices</string>
+    <string name="title_other_devices">Available devices</string>
+    <string name="button_scan">Scan for devices</string>
+    <string name="none_paired">no known devices</string>
+    <string name="scanning">scanning…</string>
+    <string name="none_found">no devices found</string>
+    <string name="message_hint">Enter message</string>
+    <string name="send">Send</string>
+    <string name="send_hr">Send\nHR</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="hint_name">Full Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_gender">Female/Male</string>
+    <string name="hint_age">Age</string>
+    <string name="err_msg_name">Enter full name</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="title_activity_chat_room_discussion">ChatRoomDiscussionActivity</string>
+    <string name="action_logout">Logout</string>
+    <string name="title_activity_settings">Settings</string>
+    <string-array name="gender">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+
+    <!-- Strings related to Settings -->
+    <string-array name="pref_display_variants_list_titles">
+        <item>Mood Light</item>
+        <item>Button</item>
+        <item>History</item>
+        <item>numeric</item>
+    </string-array>
+    <string-array name="pref_display_variants_list_values">
+        <item>moodlight</item>
+        <item>button</item>
+        <item>history</item>
+        <item>numeric</item>
+    </string-array>
+
+    <string name="pref_title_resting_pulse">Measure resting pulse</string>
+    <string name="pref_title_display_variant">Choose a display variant</string>
+
+    <string name="pref_key_display_mode_list">display_variants_list</string>
+    <string name="pref_key_resting_pulse">resting_pulse</string>
+    <string name="pref_default_resting_pulse">60</string>
+    <string name="pref_key_heart_rate">heart_rate</string>
+
+    <string name="pref_summary_resting_pulse">Measure your resting pulse</string>
+
+    <string name="pref_key_connection_status">pref_key_connection_status</string>
+    <string name="pref_ringtone_silent">pref_ringtone_silent</string>
+
+    <string name="content_description_initials_view">Circle with Initials</string>
+    <string name="pref_title_encryption_password">Set an encryption password</string>
+    <string name="pref_key_encryption_password">encryption_password</string>
+    <string name="pref_summary_encryption_password">Set a password to encrypt your messages with</string>
+    <string name="pref_default_encryption_password">secret</string>
+    <string name="pref_key_last_connected_device">pref_key_last_connected_device</string>
+
+    <string name="pref_key_user_age">user_age</string>
+    <string name="pref_title_user_age">Age</string>
+    <string name="pref_default_user_age">26</string>
+    <string name="pref_summary_user_age">Please enter your age in numbers</string>
+
+    <string name="pref_key_user_gender">user_gender</string>
+    <string name="pref_title_user_gender">Gender</string>
+    <string name="pref_default_user_gender">Female</string>
+    <string name="pref_summary_user_gender">Male/Female</string>
+
+    <string name="label_connecting">Connecting…</string>
+    <string name="message_connecting">Connecting to %1$s…</string>
+    <string name="label_disconnect">Disconnect sensor</string>
+    <string name="pref_default_mode">numeric</string>
+    <string name="pref_key_reconnect">pref_key_reconnect</string>
+
 </resources>

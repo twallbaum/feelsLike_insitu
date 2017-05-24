@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="de.offis.feelslike.insituarousal" >
 
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="18" />
     <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
 
@@ -24,10 +28,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".DeviceListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/select_device"
+            android:theme="@android:style/Theme.Material.Light.Dialog"/>
+
         <activity
             android:name="de.offis.feelslike.insituarousal.ArousalInput"
             android:label="@string/title_activity_arousalinput" >
         </activity>
+
+        <service
+            android:name=".bleservice.BleService"
+            android:enabled="true"/>
 
         <service
             android:name="de.offis.feelslike.insituarousal.InputService"
