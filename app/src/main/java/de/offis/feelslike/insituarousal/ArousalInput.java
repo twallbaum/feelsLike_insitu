@@ -32,9 +32,10 @@ import java.util.Arrays;
 import java.util.List;
 
 import de.offis.feelslike.insituarousal.activityService.ActivityDetectionService;
+import de.offis.feelslike.insituarousal.bleservice.BleService;
 
 
-public class ArousalInput extends LoggingActivity implements MultiSpinner.MultiSpinnerListener, View.OnClickListener, AdapterView.OnItemSelectedListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener,
+public class ArousalInput extends BleActivity implements MultiSpinner.MultiSpinnerListener, View.OnClickListener, AdapterView.OnItemSelectedListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener,
         ResultCallback<Status> {
 
     protected static final String TAG = "ArousalInput";
@@ -66,6 +67,11 @@ public class ArousalInput extends LoggingActivity implements MultiSpinner.MultiS
 
     private GoogleApiClient mGoogleApiClient;
     private BroadcastReceiver mBroadcastReceiver;
+
+    @Override
+    void handlePushNotification(Intent intent) {
+        Log.d(TAG, "###### handle push notification");
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -163,7 +169,7 @@ public class ArousalInput extends LoggingActivity implements MultiSpinner.MultiS
     public void onClick(View v) {
         ImageView imageView = (ImageView) v;
 
-        this.translateToMood(v);
+        //this.translateToMood(v);
 
         if(imageView.getTag(v.getId()).equals("val")) {
             this.valenceSelected = true;
@@ -207,7 +213,7 @@ public class ArousalInput extends LoggingActivity implements MultiSpinner.MultiS
 
     }
 
-    @Override
+   /* @Override
     public String getInputMethod() {
         return this.INPUT_METHOD;
     }
@@ -227,7 +233,7 @@ public class ArousalInput extends LoggingActivity implements MultiSpinner.MultiS
             case R.id.imgSa4: this.moodSelection+="[sa4]";break;
             case R.id.imgSa5: this.moodSelection+="[sa5]";break;
         }
-    }
+    }*/
 
     @Override
     public void onConnected(Bundle bundle) {

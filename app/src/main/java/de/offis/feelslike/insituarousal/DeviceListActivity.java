@@ -301,7 +301,7 @@ public class DeviceListActivity extends Activity {
 
                 List<ScanFilter> filters = new ArrayList<>();
                 filters.add(new ScanFilter.Builder().setServiceUuid(ParcelUuid.fromString(GattAttributes.HEART_RATE_SERVICE)).build());
-                Log.d(TAG, "ParcelUUID: " + ParcelUuid.fromString(GattAttributes.HEART_RATE_SERVICE).toString());
+                Log.d(TAG, "ParcelUUID: " + ParcelUuid.fromString(GattAttributes.HEART_RATE_SERVCE2).toString());
                 ScanSettings settings = new ScanSettings.Builder().build();
                 mScanner.startScan(filters, settings, mLeScanCallback);
 

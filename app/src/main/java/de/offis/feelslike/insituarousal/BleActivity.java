@@ -18,6 +18,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -40,7 +41,7 @@ import static de.offis.feelslike.insituarousal.bleservice.BleService.EXTRA_DATA;
 
 // TODO handle reconnection attempt timeout (after 10s)
 // TODO think receivers through again
-public abstract class BleActivity extends Activity {
+public abstract class BleActivity extends AppCompatActivity {
     protected final String TAG = getClass().getName();
 
     private BleService mService;
