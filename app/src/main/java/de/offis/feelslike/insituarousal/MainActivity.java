@@ -82,7 +82,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
         EditText txt = (EditText)this.findViewById(R.id.txtuid);
         int uid = Integer.parseInt(txt.getText().toString());
-
+System.out.println("trying to push to github");
         SharedPreferences sharedPref = getSharedPreferences("MoodMessengerPrefs", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("uid", uid);
