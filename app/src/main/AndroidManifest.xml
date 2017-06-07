@@ -54,10 +54,6 @@
             android:exported="false">
         </service>
 
-        <activity
-            android:name="de.offis.feelslike.insituarousal.LoggingActivity"
-            android:label="@string/title_activity_logging" >
-        </activity>
     </application>
 
 </manifest>

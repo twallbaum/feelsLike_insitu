@@ -43,7 +43,7 @@ public class DeviceListActivity extends Activity {
     static final int REQUEST_CONNECT_BLE = 2;
     private static final int PERMISSIONS_REQUEST_ACCESS_COARSE_LOCATION = 100;
     static final String EXTRA_DEVICE_ADDRESS = "de.vonniebelschuetz.ble.device_address";
-    private static final long SCAN_PERIOD = 6000;
+    private static final long SCAN_PERIOD = 60000;
     private final String TAG = this.getClass().getName();
     private ArrayAdapter<String> mNewDevicesArrayAdapter;
     private BluetoothAdapter mAdapter;
@@ -301,7 +301,7 @@ public class DeviceListActivity extends Activity {
 
                 List<ScanFilter> filters = new ArrayList<>();
                 filters.add(new ScanFilter.Builder().setServiceUuid(ParcelUuid.fromString(GattAttributes.HEART_RATE_SERVICE)).build());
-                Log.d(TAG, "ParcelUUID: " + ParcelUuid.fromString(GattAttributes.HEART_RATE_SERVCE2).toString());
+                Log.d(TAG, "ParcelUUID: " + ParcelUuid.fromString(GattAttributes.HEART_RATE_SERVICE).toString());
                 ScanSettings settings = new ScanSettings.Builder().build();
                 mScanner.startScan(filters, settings, mLeScanCallback);
 

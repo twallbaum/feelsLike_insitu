@@ -66,11 +66,4 @@
         android:id="@+id/arousal"
         android:layout_centerVertical="true"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="BleSetup"
-        android:id="@+id/ble"
-        android:layout_toRightOf="@id/arousal"/>
-
 </RelativeLayout>

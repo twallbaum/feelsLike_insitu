@@ -35,9 +35,6 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         Button arousal = (Button)findViewById(R.id.arousal);
         arousal.setOnClickListener(this);
 
-        Button ble = (Button)findViewById(R.id.ble);
-        ble.setOnClickListener(this);
-
         SharedPreferences sharedPref = getSharedPreferences("MoodMessengerPrefs", Context.MODE_PRIVATE);
         int userID = sharedPref.getInt("uid", 0);
 
@@ -75,11 +72,6 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             }
             case R.id.arousal: {
                 Intent intent = new Intent(this, ArousalInput.class);
-                startActivity(intent);
-                break;
-            }
-            case R.id.ble: {
-                Intent intent = new Intent(this, DeviceListActivity.class);
                 startActivity(intent);
                 break;
             }

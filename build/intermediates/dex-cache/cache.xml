@@ -2,1111 +2,1138 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-v4-impl/10.2.4/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="21.1.2"
-        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.1.1_3a2ea95ff46a145dec3c3dce2a7b6eb7019d9d6d/classes.dex" />
+        sha1="c76804333008c855433cad5cfd1256e86045e97b">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tagmanager-v4-impl-10.2.4_bc950733b40869c9c743e024455ebbfbcb64e8ce.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/10.2.4/jars/classes.jar"
+        jar="/Users/twallbaum/.android/build-cache/016705ab16b6600aabdc88249504b2dbea39c1e2/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="21.1.2"
-        sha1="93094dbb2af50e23339620bebd7b4b6161410edb">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-10.2.4_a5fc2e1c29efe6ab10af98c83adfb514d9e96c71/classes.dex" />
+        revision="25.0.0"
+        sha1="2ed7ba48801a0a361727833ade3b6cf096968cc0">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8d0704f2a70a818510d70615a7cf39d3a8f13f53/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-appindexing/10.2.4/jars/classes.jar"
+        jar="/Users/twallbaum/.android/build-cache/c4335d2db350617368ff08feffeeb9ced5129231/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="21.1.2"
-        sha1="6b8d1a53648f7ecfe9e7bf0baf9ca657c5a1ff91">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-appindexing-10.2.4_c0c79cc162845989b940a2577bb854b6fc94ecb3/classes.dex" />
+        revision="25.0.0"
+        sha1="43df709c95f6b0501b3adbc7da992b6a69a03214">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d5d4dd6015f9989e601455ed48bbba3f6b194c2e/classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/10.2.4/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="21.1.2"
-        sha1="80ecaefc1035fde747999e4c20e18d207363efa2">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-10.2.4_50f0f0c6adcbb26d27b9b323bb1e73fa9b8e6ebc/classes.dex" />
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.1.1_766bcf4c78000f3be069dd06c05d139b5a56beac.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="9ed08fab37c3a572da1d9ed2bf2e36c8d3e2bc48">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-10.2.4_9dab06abbdb7bd286a1db73c80186455567b7212/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="610ae6a6872d9718fc05e2c726758206bd367595">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-10.2.4_3ba2b895b5a20272823edbdfbadf50a876386fcd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="a9c8affe1f564ec0d063be68469d26e972455217">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-10.2.4_194d2d72cbd934ac546972bfe5ab6dff307274fc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="b2b4d3ecd541814f08200f8171def113095d5f39">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-10.2.4_a30fd5bd389c50ea8ca1300947220a6f495b29ca/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="4eeba61bbc47e49a5fbdfd9aa21af5d10bf4df7c">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-10.2.4_fd84551cb3fe4d8dadc7bcaad1860f4dc1c55a42/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="287051610dd01cc6eeaed7fc689712c31ad1ff70">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-10.2.4_f5258b215dd5e5ec82cf573b51f6aa64fe373649/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="90236fba9ac4dfb1f4196e231aab964522143ef6">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-10.2.4_ccffc9f8a8460f4338bda77d11b74cab0c38bad5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="5cba8868595f6aaff54cf7d1798591108cf5611c">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-10.2.4_53dbc1a9e6d66f4e5a188f3df53d91e0c882ae3e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="fe159787dd4c4bc9ed6a9d4f7430e9af1f3516c8">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-10.2.4_0ef8d4472de73a770fb41a7189826cad920e3968/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="a9c8affe1f564ec0d063be68469d26e972455217">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-10.2.4_69d1998cc645b5ec43f220251266eaba0a121705/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="fe159787dd4c4bc9ed6a9d4f7430e9af1f3516c8">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-10.2.4_f8f469d84ecd587f42918a778a4d1e95402a3758/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="dde643ce80b967f869e9b111255815ba4d391653">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-10.2.4_148cb8ed074426619181f80d186102305ba95e28/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="d66b8668122393a15c90471c5c974c25439d193a">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-10.2.4_c87fbfa9c6044f9016b46eb2611ca36c78b3de67/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="15fc616c5da3785724e2c44589b45969a848fcda">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2f54eb59ed32b9698ec428cc32c27edc70e850ec/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="701c58abf53f488bc5bb0162f1305a38a32fb5f1">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-10.2.4_6d3b4922816ded0c6efd4831c3316ba308c40aed/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="b2b4d3ecd541814f08200f8171def113095d5f39">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-10.2.4_08c5abb0b5323c74cabdbedcbf6df27cf8166f2a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-24.0.0_844fcb5bd6825a230531f3d8f08cf7fe812dfb91/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="80ecaefc1035fde747999e4c20e18d207363efa2">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-10.2.4_a14323930b73c39555cd9d42356d2fb03527b528/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="6666dd525c3da197e7d07f4f23ef5fc7881a697b">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-multidex-1.0.0_22edbcdb8ddf3c6dba022c0ff1480dc5c5b9b00d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="5803db663655ef5cb38c6bcb17ba326fdb9edfbd">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-10.2.4_cc1adbe2237f5df84ef0aeeb5c71f7ae5a242a4c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="29d9916bd9ad8406a53edbafbbce5e18943aa882">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-10.2.4_c3e1e7e705a4ddedbd6a3d03fb301980c6f00e46/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="a75030f7a3f5f96a15acdab44829bed93154d09f">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-crash-10.2.4_a5a597826b4873e15b86a8c625005ea98eddd3f6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="dd1d0d84da2cff18f741c63a9c3af7d9aa89fdd6">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-10.2.4_a330c5245967ce028a66f0ba314f233acf054e2a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-appindexing/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="6b8d1a53648f7ecfe9e7bf0baf9ca657c5a1ff91">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-appindexing-10.2.4_0fd620bcb427006b2816e0c04a82ba47d2977eb4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="d2d27edb6fbc12fdf28008cdff920e66f08cf159">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-10.2.4_3f65d6447afa7d9710df7aa9f046e955272c8687/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="287051610dd01cc6eeaed7fc689712c31ad1ff70">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-10.2.4_ba8cfdf640d2114f9227b6767c6e72b327dbcf94/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="32aa1b2a2f68f455403d10d41d8ded37c9812f11">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-awareness-10.2.4_8b54496a578fc0c4a0088339c94d3c5f6ff7e152/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="b50fe5288bba9d1635ba619bd3c308319205543e">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-10.2.4_e780074be25a5db5809b9546a626d082302059f3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.4/jars/classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="21.1.2"
         sha1="dd1d0d84da2cff18f741c63a9c3af7d9aa89fdd6">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-10.2.4_1fa3f531b09c4c361fd4643364d99a78748dcb48/classes.dex" />
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-10.2.4_1fa3f531b09c4c361fd4643364d99a78748dcb48.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/twallbaum/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jar="/Users/twallbaum/.android/build-cache/9e8820fcc31e2cef8b93b3d07fc3c7af7d7f2b60/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="21.1.2"
-        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_89feeac393975a715c98b0503e231aa2b61c4c87/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="7e0f082141b7aa90aab5d3a47ab09b0edc958f6b">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-10.2.4_fc0bd2e5ad21da53aee39b44dd853479393f0908/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="d66b8668122393a15c90471c5c974c25439d193a">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-10.2.4_d487a780b27e205c80a5450fc8bf44ab1ec109bb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="aa6a6e385297077a344e0bb95ab6c22f22119261">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-10.2.4_294ac91e9560186fd3c5769c0fbd9302e5fe2ef0/classes.dex" />
+        revision="25.0.0"
+        sha1="dd1d0d84da2cff18f741c63a9c3af7d9aa89fdd6">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7673341deb4fc356d121d3b1616d998734862cfe/classes.dex" />
     </item>
     <item
         is-multidex="true"
         jar="/Users/twallbaum/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.1/support-annotations-24.1.1.jar"
         jumboMode="true"
         optimize="true"
-        revision="21.1.2"
+        revision="25.0.0"
         sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
         <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.1.1_f78257855a5869e72ab7d3a4670c3f4e8355e90a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="0e23941db151e67886844de6586e180bb2b860ad">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-10.2.4_32ae7793edeae4adba976fd00155ecfc322da538/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="d72eb1ceff1b0bac4916088eb44bb93f86b1265c">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-framework-10.2.4_468289aad5b12ba7dce3656c31d0033b23f34cac/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="6b8ad09b76c4ffaedf443ca54bc2418760870689">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-10.2.4_603e6ed1ebe318cdf1ab21389102930a7fa631b3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="7e0f082141b7aa90aab5d3a47ab09b0edc958f6b">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-10.2.4_68d39080f15f466a20f2ea28b3399e527358f0f5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="02e70fe04e0767ccfa16745b3398816d1171f0ad">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-10.2.4_24ce4dcb24222bc3f919965a870ecff270e16c12/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="43df709c95f6b0501b3adbc7da992b6a69a03214">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-10.2.4_5a61cc7aecd77a0209f19298f098af2ca888365b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="6d0d5e86f5b7203834df01ed78ebfdd5cbf74d48">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-10.2.4_3c409a106bebf27424a8f2f216eedfda9875df5b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="6c8a4af7cf76d958c76ed7682f39e4b386b69305">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-10.2.4_4260d3b06b5acbd4918f3ab92663fc03e7ab3bbe/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="02e70fe04e0767ccfa16745b3398816d1171f0ad">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-10.2.4_e790b5420eb89bd6797682c14550dcf737caf24c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="597d0d34e15e713c486e8f4ccf739f0c7d05bde4">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-10.2.4_80695024cc30aa05d3269249f4927eadee2cfaee/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="657abe17c5ba58f5d24803ba303c6005b180897a">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-10.2.4_3f2aac6d3f7657a87cea99bc6f4a9795a9164922/classes.dex" />
     </item>
     <item
         is-multidex="true"
         jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
-        revision="21.1.2"
-        sha1="84f800cc0241834f5f362b99005b924a30c641ef">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_9894a93e7c08670be576f17e34e03151cc59f0fa/classes.dex" />
+        revision="25.0.0"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_9894a93e7c08670be576f17e34e03151cc59f0fa/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.4/jars/classes.jar"
+        jar="/Users/twallbaum/.android/build-cache/782694315bb3c82e362b308b9240540f8e0d351e/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="21.1.2"
-        sha1="143e5647b772c08c9f0d807b24bbc0b05ff6c7d2">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-10.2.4_e2817f59b8cc707d8530e3d36cf60c3ce83fac34/classes.dex" />
+        revision="25.0.0"
+        sha1="acc7a846f0bc56ecccda535fc919fd338b2b3e2c">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_dfb43e1a2fdea3f39076ecb1caffed78c1ad755e/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/10.2.4/jars/classes.jar"
+        jar="/Users/twallbaum/.android/build-cache/c84ff0969d524b617d114ae5a9da7ff3d8e5f461/output/jars/classes.jar"
         jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="29d9916bd9ad8406a53edbafbbce5e18943aa882">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_779ca591e35ce638eeb7b300045d3311a78c45cc/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.1/support-annotations-24.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/support-annotations-24.1.1_f78257855a5869e72ab7d3a4670c3f4e8355e90a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/3bcc47e036477443e4b3554ce31c40d312082478/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="32aa1b2a2f68f455403d10d41d8ded37c9812f11">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_819de2374d64c0168933c7eadfe0bb4397508683/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/c81ae6dd69928628ce7ae889e70f48345f822603/output/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_bf2c04c6bd8e260174110f7ea74c9ea616b61513/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="acc7a846f0bc56ecccda535fc919fd338b2b3e2c">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wallet-10.2.4_3e92b46479cf414a4c1026c7e85f0f32666d18df.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/5fb0035247cfb4d0f344de91067164a90fa5898f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dde643ce80b967f869e9b111255815ba4d391653">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_db885776ba5c820e761c263acbea89bc78169ee7/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/10.2.4/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="21.1.2"
         sha1="0e23941db151e67886844de6586e180bb2b860ad">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-10.2.4_ff0de76fb4de6daf83a875329b1fcc09eb7662aa/classes.dex" />
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-clearcut-10.2.4_ff0de76fb4de6daf83a875329b1fcc09eb7662aa.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
+        jar="/Users/twallbaum/.android/build-cache/8680bb4e9b34545efcd3272702e15102307f81af/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="21.1.2"
-        sha1="6d7d803871e3203465f71a163e7af104f807b446">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.1.1_d8c3ede791ff50fb3ec8fe7bd02635ef49bc6ada/classes.dex" />
+        revision="25.0.0"
+        sha1="6666dd525c3da197e7d07f4f23ef5fc7881a697b">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_957a83af1ffe1f55a6f7d502ac31dbed0aa2178c/classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.android.volley/volley/1.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.volley-volley-1.0.0_0b4fc44e79c2dca0e434b296a83b8c1b9f7fb929/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="d2d27edb6fbc12fdf28008cdff920e66f08cf159">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-10.2.4_4d441f43b9f55bc784254c748706c009d8d5a6cf/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="43df709c95f6b0501b3adbc7da992b6a69a03214">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-10.2.4_07678d6a325a7e5b8ed581510952236c890f6fcc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/10.2.4/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/10.2.4/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="21.1.2"
         sha1="183e4fb7cf95f4fa54963cfcdaf0f4d7e2397bad">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-10.2.4_aea816e5932e6fb1c569ba2a93f36900c007bad9/classes.dex" />
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-analytics-10.2.4_d19f746195d96a158cb794785163723f101edc76.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="29e4e634375ab2ed25f8db5387b564c78980422a">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-10.2.4_bce77925a4987bfc20fcc070f9bd66f4695212b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="597d0d34e15e713c486e8f4ccf739f0c7d05bde4">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-10.2.4_80695024cc30aa05d3269249f4927eadee2cfaee.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-v4-impl/10.2.4/jars/classes.jar"
+        jar="/Users/twallbaum/.android/build-cache/d4a3347717ea2322c2caefa55a1afe45f8bfdd98/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="21.1.2"
-        sha1="c76804333008c855433cad5cfd1256e86045e97b">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-v4-impl-10.2.4_daae2fe5dde2995cd0cbe1e182e8ffa8fdb096ce/classes.dex" />
+        revision="25.0.0"
+        sha1="5cba8868595f6aaff54cf7d1798591108cf5611c">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9e7595ad97efb0590bfbdb16cef4e4f3b4749569/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.android.support/palette-v7/24.0.0/jars/classes.jar"
+        jar="/Users/twallbaum/.android/build-cache/a1842854769dada51e3c0c6180f650137e64f382/output/jars/libs/internal_impl-24.1.1.jar"
         jumboMode="true"
         optimize="true"
+        revision="25.0.0"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.1_cb75036206264c355e47b5ec7ebe73459507fe3c/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="false"
+        optimize="true"
         revision="21.1.2"
-        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-palette-v7-24.0.0_25c59414ff534095d2c539df85ced7eeb41198e9/classes.dex" />
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/internal_impl-24.1.1_6d07f9d1a0cacc506d25b61dab94e33a9f5507da.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/Users/twallbaum/.android/build-cache/6522d7f798ef713b00d2203c8be0abe3bb05adda/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
+        revision="25.0.0"
+        sha1="54933c89f90a872aa342004e82b23e776fe12736">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_77b6e6f2fa23fca3d589850908ff6ae2f8b0d1c0/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.android.volley/volley/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
         revision="21.1.2"
-        sha1="94783a41f8dd1a795ada64068f9540e5e33380ef">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_0e24f1169e46d249eebb2eaed94ac969a9657643/classes.dex" />
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.android.volley-volley-1.0.0_0b4fc44e79c2dca0e434b296a83b8c1b9f7fb929.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="d2d27edb6fbc12fdf28008cdff920e66f08cf159">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appinvite-10.2.4_4d441f43b9f55bc784254c748706c009d8d5a6cf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="80ecaefc1035fde747999e4c20e18d207363efa2">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-messaging-10.2.4_50f0f0c6adcbb26d27b9b323bb1e73fa9b8e6ebc.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.4/jars/classes.jar"
+        jar="/Users/twallbaum/.android/build-cache/1b2209aff53345315e8e6c32f600919c68e4ad35/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
+        revision="25.0.0"
+        sha1="6c8a4af7cf76d958c76ed7682f39e4b386b69305">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0547a2a2b065dfc64b2f2f51cfb100350259c4cb/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
         revision="21.1.2"
-        sha1="6d0d5e86f5b7203834df01ed78ebfdd5cbf74d48">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-10.2.4_7c69653a023b78d536ed826e3dad69cea40098a5/classes.dex" />
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.1.1_7d64224f8f5b20b8d2523b7d45946055802a0f3c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.1.1_3a2ea95ff46a145dec3c3dce2a7b6eb7019d9d6d.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/10.2.4/jars/classes.jar"
+        jar="/Users/twallbaum/.android/build-cache/c5ca90def484ba7781ca783088346737298a5ceb/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
+        revision="25.0.0"
+        sha1="7e0f082141b7aa90aab5d3a47ab09b0edc958f6b">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c46096654bcac94c53259f1be3b2238e725ce38a/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
         revision="21.1.2"
+        sha1="688809418e4c2b5014a028c02708d6aeaba466ff">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-auth-base-10.2.4_5a72a5e6642f9349882283423c7defe8a5230e68.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/db1005b2ed30b6586ddbf88ebd3024006047d543/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
         sha1="90236fba9ac4dfb1f4196e231aab964522143ef6">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-10.2.4_ab9997d219d9145840585938e1682ca3196328e7/classes.dex" />
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0b8439b57dd31d4e8eb050cb815278e8c7e343f1/classes.dex" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.android.support/palette-v7/24.0.0/jars/classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="21.1.2"
         sha1="734e80dffea7bd76c18ae256822a124c30d85850">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-palette-v7-24.0.0_6cf09f40a2848b20ec282659ad9466c8b9ba920d/classes.dex" />
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.android.support-palette-v7-24.0.0_6cf09f40a2848b20ec282659ad9466c8b9ba920d.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="8fdf15d202000492aefe43092b21af5332df0178">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-instantapps-10.2.4_ec39058a1cb040cfc7b75460fbbbf37d1977ba38/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/10.2.4/jars/classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="21.1.2"
         sha1="93094dbb2af50e23339620bebd7b4b6161410edb">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-10.2.4_ff4b70b7af2669895cb62e8ac849f45e71947166/classes.dex" />
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-games-10.2.4_ff4b70b7af2669895cb62e8ac849f45e71947166.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="610ae6a6872d9718fc05e2c726758206bd367595">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-panorama-10.2.4_3ba2b895b5a20272823edbdfbadf50a876386fcd.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/10.2.4/jars/classes.jar"
+        jar="/Users/twallbaum/.android/build-cache/5977b11d2080801df0e4d1b42bc714541c33e1b9/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="21.1.2"
-        sha1="2188ba20a948ec6e7fa671b818c69d876d8bf32d">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-10.2.4_983a4c54e29fa9abc3a00123c5f3eda333caa6bc/classes.dex" />
+        revision="25.0.0"
+        sha1="0e23941db151e67886844de6586e180bb2b860ad">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_292892ee553ab490ddff27fec03894c61eecbf92/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/10.2.4/jars/classes.jar"
+        jar="/Users/twallbaum/.android/build-cache/c60c7c47c35bfc00abaa4243548fc5c32fd2bef8/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
+        revision="25.0.0"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0d84f22e3eecfe850c6eb1339009bca858538227/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/63657014a6dff3707218e10bf3b6a29607722145/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_df467397446d9f6bef26338912c916590f525441/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/1d7b4d14ee9b4b62e4e35d82766ee237dd4190d4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c01990d0a9bbc67f4c2b9610c1170046c2e37b3e">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_424fc7ec6d36d52da80e6d0a2bb084f2010f8d30/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
         revision="21.1.2"
+        sha1="5cba8868595f6aaff54cf7d1798591108cf5611c">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-10.2.4_53dbc1a9e6d66f4e5a188f3df53d91e0c882ae3e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="fe159787dd4c4bc9ed6a9d4f7430e9af1f3516c8">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-lite-10.2.4_f8f469d84ecd587f42918a778a4d1e95402a3758.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="701c58abf53f488bc5bb0162f1305a38a32fb5f1">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-plus-10.2.4_6d3b4922816ded0c6efd4831c3316ba308c40aed.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/241b02c0e8d3d327c548b618dc656dd38af1d967/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e9ff1bcddaaa8c16ac7d844640986c7042848ab1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/726803fde8f069f4d18c51541653b71899e9d4cf/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="80ecaefc1035fde747999e4c20e18d207363efa2">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_190e9e85261ef90989c79e2b227878547bba68a9/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.android.support-mediarouter-v7-24.0.0_844fcb5bd6825a230531f3d8f08cf7fe812dfb91.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/ced155f7c1bb8b1c8b3eb7a6088a1778c48918ad/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6b8d1a53648f7ecfe9e7bf0baf9ca657c5a1ff91">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0d73d6fa4ea6d7e3c175ce9f909ab6beb7400686/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/71ab9d4d2268c9411ae3c80bab1c4b370778e535/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d237556caead5b93d97e18a071059a2c0045978e">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_07631b2e3df1f1e97bf981b4abdddbd48eaf9624/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/dfc79223f4d9a3df4658353caa85b791a85e189f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a9c8affe1f564ec0d063be68469d26e972455217">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e3775af20bfcc95540220161c75875d7eb9e10f6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/9370e19f9dee348c18c5b13d7f78a7631bf3fc7f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="287051610dd01cc6eeaed7fc689712c31ad1ff70">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8daf3d50c6bb3f640cc396ccbe4e5d50e0f2c903/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/506532a121edb226728d22f3129f8dbeccbdd93e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8748e15968514ff1708deb3bb7f0c17623e50bbb">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9baf89794076fb6ae67bfd91b12c00d91e8fcb19/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/adef441bc5bd553f02f41a7e4d15925130cdc75a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6d0d5e86f5b7203834df01ed78ebfdd5cbf74d48">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8475888291be0f8220c4520ebad6935e03695dfb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/c5b8547875662cfd2d8de0f73e3d9c31a8e0f01e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
         sha1="98ac18f891a8279ae57c4771cbf4a2a65f95b04c">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-10.2.4_9548973c6860459aca848f5789f8bbf6913bd845/classes.dex" />
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_95737a42c635ed1cf93d62a10bcfa63bd687979e/classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.4/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.amulyakhare/com.amulyakhare.textdrawable/1.0.1/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="21.1.2"
-        sha1="9ed08fab37c3a572da1d9ed2bf2e36c8d3e2bc48">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-10.2.4_176717baaeb3c16bcd31d696c448e2aba4e04eb8/classes.dex" />
+        sha1="d237556caead5b93d97e18a071059a2c0045978e">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.amulyakhare-com.amulyakhare.textdrawable-1.0.1_4be69fa2a0ed452c947b7a0d08c66078cdf58ac6.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/10.2.4/jars/classes.jar"
+        jar="/Users/twallbaum/.android/build-cache/76f69dc14686477366e617d901cf8dfb9d237db3/output/jars/classes.jar"
         jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="701c58abf53f488bc5bb0162f1305a38a32fb5f1">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e3713304035e56515194561ec0835de5da48906c/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/10.2.4/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="21.1.2"
         sha1="2ed7ba48801a0a361727833ade3b6cf096968cc0">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-10.2.4_b1a172f0d0e3fc85a138082d511277a46c261b13/classes.dex" />
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-analytics-impl-10.2.4_c0f81b6a38fa202a90b57ce1bc50d41096504f03.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="8fdf15d202000492aefe43092b21af5332df0178">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-instantapps-10.2.4_a90b159d5f2d89a3966816872ba36ce8aff628e3.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/f585ffcc7deba7a8e82781aa8e4ae107e5eaecf4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="183e4fb7cf95f4fa54963cfcdaf0f4d7e2397bad">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_be3573f7877818962ff48d902d840b89ec9d657b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/5e1834c6fafe50e382d7aa3d51827e4e411cd139/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1b95f2bf44857a158b097e9f80d5d18d69f32584">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f0254eba38ac69dc45b4d721243235b46328f9bb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/d77b0c1a3d7eb3da411f34a9721fc0fe1354c6f1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b50fe5288bba9d1635ba619bd3c308319205543e">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_70c09625be79105a53128aa13641d9e468cca3d5/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="b50fe5288bba9d1635ba619bd3c308319205543e">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-connection-10.2.4_e780074be25a5db5809b9546a626d082302059f3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="98ac18f891a8279ae57c4771cbf4a2a65f95b04c">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-10.2.4_4324276e3251c066f703ccbcb3227fadb7e6d960.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/358dfeec02ab19c3f1a6943498e15a4c74fc40ee/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d2d27edb6fbc12fdf28008cdff920e66f08cf159">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_16ffddc6650605cfbb733f68464a735724c9cd09/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/93bf02b669970b405670362f70d559e53be6c932/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_94180b3b48d16f6b457073c227b154addbea31be/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="d66b8668122393a15c90471c5c974c25439d193a">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-drive-10.2.4_d487a780b27e205c80a5450fc8bf44ab1ec109bb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="7e0f082141b7aa90aab5d3a47ab09b0edc958f6b">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-10.2.4_68d39080f15f466a20f2ea28b3399e527358f0f5.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/315d54adb763edc635d223a52269cd8307e57729/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2188ba20a948ec6e7fa671b818c69d876d8bf32d">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_42b703a7c6376bd64c3057b4737e88e878146b98/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="aa6a6e385297077a344e0bb95ab6c22f22119261">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-auth-10.2.4_294ac91e9560186fd3c5769c0fbd9302e5fe2ef0.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/79630267aabf134ef20cdaaa34a085b0ab62a64d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="88ae4c6ceaeab7beca5e396e0698c6958e26a2d2">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d5b99550dd1bff8a8a6cfe7f70522e2eacb010fa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/8220821400566913a0bd2213febcf9752d19b2a8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="787871951412550519b0222aba3c9df4cea49875">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e3698d585f584bee50d492b4242c3845cd665ba9/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="6b8ad09b76c4ffaedf443ca54bc2418760870689">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-storage-common-10.2.4_603e6ed1ebe318cdf1ab21389102930a7fa631b3.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/e0e065d2f39f4dbd6a175f6eea3f2565b1d7c560/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a75030f7a3f5f96a15acdab44829bed93154d09f">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9e42dc6b01a42bd5c41fb0e9a98bb9a1442ad026/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="1b95f2bf44857a158b097e9f80d5d18d69f32584">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wearable-10.2.4_11c3209a083750809e224cacbc35b983005fe006.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/5f71c8e9918b1722d5169c49cbb69d774ec2bec1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0d5ea52c6e484dd9f1e9ffeab9b24f98b6e2f1fb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/0f1f82e5a2c05dfd9baeff1bcaafdd56d7904866/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4eeba61bbc47e49a5fbdfd9aa21af5d10bf4df7c">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c531d14eeea3c911dc8d86d0ba29dc9e62587412/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="d72eb1ceff1b0bac4916088eb44bb93f86b1265c">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-cast-framework-10.2.4_468289aad5b12ba7dce3656c31d0033b23f34cac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="88ae4c6ceaeab7beca5e396e0698c6958e26a2d2">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-identity-10.2.4_0abed01b760103e7a199c84db7bf17331dd59cc1.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/d80c9b7cc1dffd5639b9bd715213f72b4110c6c9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="aa6a6e385297077a344e0bb95ab6c22f22119261">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_febedf3a62b3b0a7440e3ac2332cde044f50c017/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.android.support/design/24.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.android.support-design-24.1.1_54be1967517036b7258093004b73e5684defb594.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="2188ba20a948ec6e7fa671b818c69d876d8bf32d">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-vision-10.2.4_983a4c54e29fa9abc3a00123c5f3eda333caa6bc.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/a1842854769dada51e3c0c6180f650137e64f382/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_123ae37129ed0f5686d1c829ef9399bb4cef3ec8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/66c5d0747df37ee4b8a3f23a06cb403a04917f73/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d72eb1ceff1b0bac4916088eb44bb93f86b1265c">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_298369c923275271d3d103c309d62e4f3e2a2fc9/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="143e5647b772c08c9f0d807b24bbc0b05ff6c7d2">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-10.2.4_e2817f59b8cc707d8530e3d36cf60c3ce83fac34.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="6c8a4af7cf76d958c76ed7682f39e4b386b69305">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-places-10.2.4_4260d3b06b5acbd4918f3ab92663fc03e7ab3bbe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="02e70fe04e0767ccfa16745b3398816d1171f0ad">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tagmanager-api-10.2.4_e790b5420eb89bd6797682c14550dcf737caf24c.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/30b458b6fc24deceefb570ac46c985e5c314726e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="29e4e634375ab2ed25f8db5387b564c78980422a">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_835c849cfe9255c569549ccf8a011b1f3cbebd71/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.1.1_d8c3ede791ff50fb3ec8fe7bd02635ef49bc6ada.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/5c3901da75ae06c3227049785d806d76712f7587/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fe159787dd4c4bc9ed6a9d4f7430e9af1f3516c8">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4036330bfe533d22f9b60601ad5de663737feb97/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="43df709c95f6b0501b3adbc7da992b6a69a03214">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-impl-10.2.4_07678d6a325a7e5b8ed581510952236c890f6fcc.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/79ab6f1f03885728e823e60c137c05644f0c4037/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="143e5647b772c08c9f0d807b24bbc0b05ff6c7d2">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3ace121cfd0e2d1875df22c23e83e510da899491/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/ef3f3fc66637f886f79582c0569bad5e722dc314/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="93094dbb2af50e23339620bebd7b4b6161410edb">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d275acf00c9520ee2a487248d16d6473d887a3d3/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="657abe17c5ba58f5d24803ba303c6005b180897a">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gass-10.2.4_58c2aad89fac29d8c8b00f1e007adac78d97ca55.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/fc4bafb955d448a464500d85adb540b98f448bb2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5803db663655ef5cb38c6bcb17ba326fdb9edfbd">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f3c8867d3b42633951fba0922931f63b30d1e39d/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="6d0d5e86f5b7203834df01ed78ebfdd5cbf74d48">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-10.2.4_7c69653a023b78d536ed826e3dad69cea40098a5.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/e14c517e4a1d59493ddae310f14cdbef49cd8854/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="610ae6a6872d9718fc05e2c726758206bd367595">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9d22665fda40862fd139f65d4f11770c6f0d2f41/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/c2b8caef8a863b178649a3677b83dd0f31a082ff/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="597d0d34e15e713c486e8f4ccf739f0c7d05bde4">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6f725463ea0741df84faa803ecb7788cf453a795/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="4eeba61bbc47e49a5fbdfd9aa21af5d10bf4df7c">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-10.2.4_fd84551cb3fe4d8dadc7bcaad1860f4dc1c55a42.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/3362d017158f309f888021ad27057c70b4768d6c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d66b8668122393a15c90471c5c974c25439d193a">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1919095460dce76139569dee1d61d2a0ee75fbed/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="a9c8affe1f564ec0d063be68469d26e972455217">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-fitness-10.2.4_194d2d72cbd934ac546972bfe5ab6dff307274fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="287051610dd01cc6eeaed7fc689712c31ad1ff70">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-cast-10.2.4_f5258b215dd5e5ec82cf573b51f6aa64fe373649.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="b2b4d3ecd541814f08200f8171def113095d5f39">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tagmanager-10.2.4_a30fd5bd389c50ea8ca1300947220a6f495b29ca.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/29ceddcb0ecd14213fe01dc72c2dacbff7355f70/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6b8ad09b76c4ffaedf443ca54bc2418760870689">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_946195dcf285f07e95f7e1782d6f7323461f9efe/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="787871951412550519b0222aba3c9df4cea49875">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-24.1.1_b0e2a00b40eb94a5fb3cf5761a2905bee42776c3.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/e7cd07d11d1594e418f7338da59845d219a0c204/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="688809418e4c2b5014a028c02708d6aeaba466ff">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f9d4450c8b21dbbe8833420503be87b2f4c3dad3/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="9ed08fab37c3a572da1d9ed2bf2e36c8d3e2bc48">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-10.2.4_176717baaeb3c16bcd31d696c448e2aba4e04eb8.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/c81ae6dd69928628ce7ae889e70f48345f822603/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e117d19b8754f658dc8160ce72bb4b9f82230910/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/955c2a911961638b0a28c7d445ee51c505477453/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b2b4d3ecd541814f08200f8171def113095d5f39">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_cc7fe1a2f31c4d4703526c79bb0aba5da62d709d/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0_9520525b95cf9ea17ae0617517f834acf80d6146.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/e797172a37785ec66a26b0f3af03b9ce7d22fc5a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="657abe17c5ba58f5d24803ba303c6005b180897a">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f28cfeecfcac923bc50a9f701f18286dcf198c6d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/4ce89001dc485fbd390302b504ebf8a8d1236bb0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c76804333008c855433cad5cfd1256e86045e97b">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_907444e2c4684bb7600dcb27012c9ae263caa9e3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/e6dfee809ae9bebc62454d9d46c889107dc02f9d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9ed08fab37c3a572da1d9ed2bf2e36c8d3e2bc48">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1a22e7f685f9d6a1686eee3e0c9b9517a5384b40/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/twallbaum/.android/build-cache/c59ee3563cb1144d5d47130465859943714eb364/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8fdf15d202000492aefe43092b21af5332df0178">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bc287b9fea131580751b6cc3182bcb1b239b1335/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="32aa1b2a2f68f455403d10d41d8ded37c9812f11">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-awareness-10.2.4_8055aec0b5dacb4deeaeab023f98639ce10a1320.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="a75030f7a3f5f96a15acdab44829bed93154d09f">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-crash-10.2.4_1b59d3cae47f175d551f28eca18b86b17374662d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="8748e15968514ff1708deb3bb7f0c17623e50bbb">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-storage-10.2.4_37c051f58c64f3160297a140a8d47220dbae4f32.jar" />
     </item>
     <item
         is-multidex="true"
         jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
-        revision="21.1.2"
-        sha1="55f29c93fbca5317ff6b9ed02cdcfc024c85a88f">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_9f3d27dd13e08132b792f937bccd7721f95f225e/classes.dex" />
+        revision="25.0.0"
+        sha1="9df112f0af23a099876175749f5c5a1841d6e1fe">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_9f3d27dd13e08132b792f937bccd7721f95f225e/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/classes.jar"
+        jar="/Users/twallbaum/.android/build-cache/ec6df81835bbfe64d9b8e4c30ffcf42571e56793/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="21.1.2"
-        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-24.0.0_33fd317bcda5a11dd9b833cab59214ddb15b549c/classes.dex" />
+        revision="25.0.0"
+        sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0fc6d41baf51491a8db1bcde33cb633fcef10364/classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/libs/internal_impl-24.0.0.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/10.2.4/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="21.1.2"
-        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_9520525b95cf9ea17ae0617517f834acf80d6146/classes.dex" />
+        sha1="90236fba9ac4dfb1f4196e231aab964522143ef6">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-safetynet-10.2.4_ccffc9f8a8460f4338bda77d11b74cab0c38bad5.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/10.2.4/jars/classes.jar"
+        jar="/Users/twallbaum/.android/build-cache/cdc7766d2b23917ff9f780a95c265e5db934f62b/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="21.1.2"
-        sha1="a75030f7a3f5f96a15acdab44829bed93154d09f">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-crash-10.2.4_1b59d3cae47f175d551f28eca18b86b17374662d/classes.dex" />
+        revision="25.0.0"
+        sha1="02e70fe04e0767ccfa16745b3398816d1171f0ad">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_23cc548ca786e4ca9006497e63bc8a8e20e93d1e/classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/10.2.4/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.4/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="21.1.2"
-        sha1="dde643ce80b967f869e9b111255815ba4d391653">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-10.2.4_ed4c6d37d1eac713ee03537df3d74f3d5c244a6d/classes.dex" />
+        sha1="54933c89f90a872aa342004e82b23e776fe12736">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-iid-10.2.4_2bc5bdec32c78fd3f93ed1893d3732f62d2dd3b6.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="32aa1b2a2f68f455403d10d41d8ded37c9812f11">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-awareness-10.2.4_8055aec0b5dacb4deeaeab023f98639ce10a1320/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="8748e15968514ff1708deb3bb7f0c17623e50bbb">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-10.2.4_37c051f58c64f3160297a140a8d47220dbae4f32/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/10.2.4/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/10.2.4/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="21.1.2"
         sha1="29d9916bd9ad8406a53edbafbbce5e18943aa882">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-10.2.4_7763c804cbc53675d018e87b2d80f0d828e22269/classes.dex" />
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-iid-10.2.4_c3e1e7e705a4ddedbd6a3d03fb301980c6f00e46.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/10.2.4/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.0/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="21.1.2"
-        sha1="4eeba61bbc47e49a5fbdfd9aa21af5d10bf4df7c">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-10.2.4_0a03b405d892febe4a6cdfb8d8734d8f21f3b908/classes.dex" />
+        sha1="6666dd525c3da197e7d07f4f23ef5fc7881a697b">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.android.support-multidex-1.0.0_22edbcdb8ddf3c6dba022c0ff1480dc5c5b9b00d.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_37792082da92543326b57e1c9f99e46e82bb1aa3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="88ae4c6ceaeab7beca5e396e0698c6958e26a2d2">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-10.2.4_7858b19b29a214001cf6b9f54bfe1516be59d007/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="d72eb1ceff1b0bac4916088eb44bb93f86b1265c">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-framework-10.2.4_db82c937488dd14219538fde1ba7eaee95f772dd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/libs/internal_impl-24.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_daa0cab1237447a81987600008a23c8a9e2f7672/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="688809418e4c2b5014a028c02708d6aeaba466ff">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-10.2.4_731666f40fe9aefd1edb67cd84bb64ef8d10b11e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="787871951412550519b0222aba3c9df4cea49875">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.1.1_b0e2a00b40eb94a5fb3cf5761a2905bee42776c3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="29e4e634375ab2ed25f8db5387b564c78980422a">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-10.2.4_2aa8dc70670d2acbcddd301e4ab8860dc7a2e315/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="b50fe5288bba9d1635ba619bd3c308319205543e">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-10.2.4_92128948ff8c17ebe02de8548b3534f863ab95d5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="aa6a6e385297077a344e0bb95ab6c22f22119261">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-10.2.4_b028bd6d95e74510d267e7124f8da24cbe34ce31/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="c01990d0a9bbc67f4c2b9610c1170046c2e37b3e">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-10.2.4_c940dfc7622fac63032f05b059e70aa83762e1e7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="54933c89f90a872aa342004e82b23e776fe12736">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-10.2.4_2bc5bdec32c78fd3f93ed1893d3732f62d2dd3b6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="2ed7ba48801a0a361727833ade3b6cf096968cc0">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-10.2.4_c0f81b6a38fa202a90b57ce1bc50d41096504f03/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="54933c89f90a872aa342004e82b23e776fe12736">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-10.2.4_1de32561ed6194c7d27fbb7671e4d4d207756c31/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-v4-impl/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="c76804333008c855433cad5cfd1256e86045e97b">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-v4-impl-10.2.4_bc950733b40869c9c743e024455ebbfbcb64e8ce/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.amulyakhare/com.amulyakhare.textdrawable/1.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="d237556caead5b93d97e18a071059a2c0045978e">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.amulyakhare-com.amulyakhare.textdrawable-1.0.1_4be69fa2a0ed452c947b7a0d08c66078cdf58ac6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.1.1_766bcf4c78000f3be069dd06c05d139b5a56beac/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="c01990d0a9bbc67f4c2b9610c1170046c2e37b3e">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-10.2.4_f356ccbe3db2ddfc2ba2fd08b79f1448890720be/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="98ac18f891a8279ae57c4771cbf4a2a65f95b04c">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-10.2.4_4324276e3251c066f703ccbcb3227fadb7e6d960/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="8748e15968514ff1708deb3bb7f0c17623e50bbb">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-10.2.4_3d50fa19b37dc5e6b4980498de88ef666c4ecf71/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="597d0d34e15e713c486e8f4ccf739f0c7d05bde4">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-10.2.4_5e503fcba28f8a12ed3aec746b7f19dbe4bc8598/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="acc7a846f0bc56ecccda535fc919fd338b2b3e2c">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-10.2.4_3e92b46479cf414a4c1026c7e85f0f32666d18df/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.0.0_417966966c88ce54f6ff73a2cc5cffb86350b06d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="5cba8868595f6aaff54cf7d1798591108cf5611c">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-10.2.4_7eb7e7ffad6e33468ef9ef2c327c7fe86a1ef56f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="1b95f2bf44857a158b097e9f80d5d18d69f32584">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-10.2.4_11c3209a083750809e224cacbc35b983005fe006/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="6b8ad09b76c4ffaedf443ca54bc2418760870689">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-10.2.4_aec7fefeb4bc321b6c1fb81ecb597cf4579e7560/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.0.0_754aae05156cc61dbc15232008a28021a156adf2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_9ad78f96171afe64ea3cd080c52432977e9608f6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="acc7a846f0bc56ecccda535fc919fd338b2b3e2c">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-10.2.4_f8103cefdac5cb92a7df0d425ecca29771912f19/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="701c58abf53f488bc5bb0162f1305a38a32fb5f1">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-10.2.4_07d58b5230f9af01156a24ce28d9aa66abb1ef9d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="183e4fb7cf95f4fa54963cfcdaf0f4d7e2397bad">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-10.2.4_d19f746195d96a158cb794785163723f101edc76/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.2.4/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.2.4/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="21.1.2"
         sha1="5803db663655ef5cb38c6bcb17ba326fdb9edfbd">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-10.2.4_e71b2e7c93c355f850aa91257feb04ebe1bc6739/classes.dex" />
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-10.2.4_cc1adbe2237f5df84ef0aeeb5c71f7ae5a242a4c.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.android.support/design/24.1.1/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-appindexing/10.2.4/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="21.1.2"
-        sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.1.1_54be1967517036b7258093004b73e5684defb594/classes.dex" />
+        sha1="6b8d1a53648f7ecfe9e7bf0baf9ca657c5a1ff91">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-appindexing-10.2.4_0fd620bcb427006b2816e0c04a82ba47d2977eb4.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/libs/internal_impl-24.1.1.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/10.2.4/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="21.1.2"
-        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.1_6d07f9d1a0cacc506d25b61dab94e33a9f5507da/classes.dex" />
+        sha1="c01990d0a9bbc67f4c2b9610c1170046c2e37b3e">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-config-10.2.4_c940dfc7622fac63032f05b059e70aa83762e1e7.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.2.4/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/10.2.4/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="21.1.2"
-        sha1="29e4e634375ab2ed25f8db5387b564c78980422a">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-10.2.4_bce77925a4987bfc20fcc070f9bd66f4695212b5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="657abe17c5ba58f5d24803ba303c6005b180897a">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-10.2.4_58c2aad89fac29d8c8b00f1e007adac78d97ca55/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="6c8a4af7cf76d958c76ed7682f39e4b386b69305">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-10.2.4_603c0cbce60457f07ddd83dd2a21c2d09b83eb9a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="1b95f2bf44857a158b097e9f80d5d18d69f32584">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-10.2.4_9e402c55041c4366defe847da62abe404c820f34/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="610ae6a6872d9718fc05e2c726758206bd367595">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-10.2.4_40d83482f8090e5be02f2f145e6384c4695acac4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="f62e763609f65e47dc6c498760a4accf02776788">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.1.1_7d64224f8f5b20b8d2523b7d45946055802a0f3c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.0.0_f022c31bb18b82401732e4a4a327fe8cbcb956ef/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="88ae4c6ceaeab7beca5e396e0698c6958e26a2d2">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-10.2.4_0abed01b760103e7a199c84db7bf17331dd59cc1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="688809418e4c2b5014a028c02708d6aeaba466ff">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-10.2.4_5a72a5e6642f9349882283423c7defe8a5230e68/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="2188ba20a948ec6e7fa671b818c69d876d8bf32d">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-10.2.4_49fdf4e9d1ad656f86209e895c24dd80c8e953e1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="8fdf15d202000492aefe43092b21af5332df0178">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-instantapps-10.2.4_a90b159d5f2d89a3966816872ba36ce8aff628e3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="143e5647b772c08c9f0d807b24bbc0b05ff6c7d2">
-        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/FeelsLikeArousalInSitu_S1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-10.2.4_15621cc2dcf3f6998af9321b8856086afea2ddd1/classes.dex" />
+        sha1="dde643ce80b967f869e9b111255815ba4d391653">
+        <dex dex="/Users/twallbaum/_work/00_Promotion/06_Implementation/feelsLike_insitu/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-nearby-10.2.4_ed4c6d37d1eac713ee03537df3d74f3d5c244a6d.jar" />
     </item>
 
 </items>
