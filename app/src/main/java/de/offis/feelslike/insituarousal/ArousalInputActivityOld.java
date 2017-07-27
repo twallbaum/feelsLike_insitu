@@ -38,16 +38,14 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import de.offis.feelslike.insituarousal.activityService.ActivityDetectionService;
-import de.offis.feelslike.insituarousal.bleservice.BleService;
 
 
-public class ArousalInput extends BleActivity implements MultiSpinner.MultiSpinnerListener, View.OnClickListener, AdapterView.OnItemSelectedListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener,
+public class ArousalInputActivityOld extends BleActivity implements MultiSpinner.MultiSpinnerListener, View.OnClickListener, AdapterView.OnItemSelectedListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener,
         ResultCallback<Status> {
 
     protected static final String TAG = "ArousalInput";
@@ -149,7 +147,7 @@ public class ArousalInput extends BleActivity implements MultiSpinner.MultiSpinn
                     stopTime = System.currentTimeMillis();
                     timeToInput = stopTime - startTime;
 
-                    logActions(getLogStorageDir(ArousalInput.this, "feelslikeinsitu"));
+                    logActions(getLogStorageDir(ArousalInputActivityOld.this, "feelslikeinsitu"));
                     finish();
                 }else {
                     Snackbar.make(findViewById(R.id.myCoordinatorLayout), "Please select at least valence and arousal levels.",
@@ -230,7 +228,6 @@ public class ArousalInput extends BleActivity implements MultiSpinner.MultiSpinn
 
         SharedPreferences sharedPref = getSharedPreferences("MoodMessengerPrefs", Context.MODE_PRIVATE);
         this.userID = sharedPref.getInt("uid", 0);
-
     }
 
 
@@ -275,7 +272,6 @@ public class ArousalInput extends BleActivity implements MultiSpinner.MultiSpinn
         c.drawBitmap(checkmark, 100, 50, paint);
 
         v.setImageBitmap(tmpbmp);
-
     }
 
     public void translateToMood(View v) {

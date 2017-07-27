@@ -1,5 +1,7 @@
 package de.offis.feelslike.insituarousal.bleservice;
 
+import android.app.Notification;
+import android.app.PendingIntent;
 import android.app.Service;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -14,11 +16,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Binder;
 import android.os.IBinder;
+import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
 import java.util.List;
 import java.util.UUID;
 
+import de.offis.feelslike.insituarousal.MainActivity;
+import de.offis.feelslike.insituarousal.R;
 import de.offis.feelslike.insituarousal.bleservice.GattAttributes;
 
 /**
@@ -111,10 +116,56 @@ public class BleService extends Service {
         @Override
         public void onCharacteristicChanged(BluetoothGatt gatt,
                                             BluetoothGattCharacteristic characteristic) {
-            Log.i(TAG, "onCharacteristicChanged()");
+//            Log.i(TAG, "onCharacteristicChanged()");
             broadcastUpdate(ACTION_DATA_AVAILABLE, characteristic);
         }
     };
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        Log.d(TAG, "onStartCommand");
+        int superResult = super.onStartCommand(intent, flags, startId);
+        return superResult;
+    }
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+//        Thread t = new Thread(){
+//            @Override
+//            public void run() {
+//                while(true){
+//                    Log.d("TestThread", "still running " + testCounter++);
+//                    try {
+//                        Thread.sleep(1000);
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//            }
+//        };
+//        t.start();
+
+        Intent notificationIntent = new Intent(this, MainActivity.class);
+
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0,
+                notificationIntent, 0);
+
+        Notification notification = new NotificationCompat.Builder(this)
+                .setOngoing(true)
+                .setSmallIcon(R.mipmap.ic_launcher)
+                .setContentTitle("Feels Insitu")
+                .setContentText("Monitoring heart rates...")
+                .setContentIntent(pendingIntent).build();
+
+        startForeground(1337, notification);
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "onDestroy");
+    }
 
     private void broadcastUpdate(final String action) {
         Log.i(TAG, "broadcastUpdate("+ action +")");
@@ -124,7 +175,7 @@ public class BleService extends Service {
 
     private void broadcastUpdate(final String action,
                                  final BluetoothGattCharacteristic characteristic) {
-        Log.i(TAG, "broadcastUpdate("+ action + ", " + characteristic.toString() + ")");
+//        Log.i(TAG, "broadcastUpdate("+ action + ", " + characteristic.toString() + ")");
         final Intent intent = new Intent(action);
 
         // This is special handling for the Heart Rate Measurement profile.  Data parsing is
@@ -165,6 +216,7 @@ public class BleService extends Service {
         }
     }
 
+    private int testCounter = 0;
     @Override
     public IBinder onBind(Intent intent) {
         Log.i(TAG, "onBind(" + intent.toUri(0)+ ")");
@@ -177,7 +229,7 @@ public class BleService extends Service {
         // After using a given device, you should make sure that BluetoothGatt.close() is called
         // such that resources are cleaned up properly.  In this particular example, close() is
         // invoked when the UI is disconnected from the Service.
-        close();
+//        close();
         return super.onUnbind(intent);
     }
 

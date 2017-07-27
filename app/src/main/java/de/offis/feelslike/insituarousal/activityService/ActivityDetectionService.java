@@ -2,13 +2,15 @@ package de.offis.feelslike.insituarousal.activityService;
 
 import android.app.IntentService;
 import android.content.Intent;
+import android.os.Parcelable;
 
 import com.google.android.gms.location.ActivityRecognitionResult;
 import com.google.android.gms.location.DetectedActivity;
 
+import java.util.ArrayList;
 import java.util.List;
 
-import de.offis.feelslike.insituarousal.ArousalInput;
+import de.offis.feelslike.insituarousal.ArousalInputActivity;
 
 /**
  * Created by twallbaum on 15.05.17.
@@ -16,6 +18,10 @@ import de.offis.feelslike.insituarousal.ArousalInput;
 
 public class ActivityDetectionService extends IntentService {
     protected static final String TAG = "activityDetectionService";
+
+    public static final String DETECTED_ACTIVITIES = "detectedActivities";
+    public static final String ACTION_NEW_ACTIVITY =
+            "de.offis.feelslike.insituarousal.broadcast.NEW_ACTIVITY";
 
     public ActivityDetectionService() {
         super(TAG);
@@ -36,6 +42,8 @@ public class ActivityDetectionService extends IntentService {
                 probableActivities =
                 activityRecognitionResult.getProbableActivities();
 
-        sendBroadcast(ArousalInput.newBroadcastIntent(probableActivities));
+        sendBroadcast(new Intent(ACTION_NEW_ACTIVITY).putParcelableArrayListExtra(
+                DETECTED_ACTIVITIES, new ArrayList<Parcelable>(probableActivities)));
+        return ;
     }
 }

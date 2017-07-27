@@ -184,6 +184,13 @@ public abstract class BleActivity extends AppCompatActivity {
 
         // start BleService
         Intent bleServiceIntent = new Intent(this, BleService.class);
+        startService(bleServiceIntent);
+        // when only bindService, than still running when minimized, but closing when activity closed
+        // Service not destroyed. seems to just not receive heart rate measurements anymore. Connection closed/disconnected?
+        //      never onDestroy gets called, but the started threads stop. strange....
+        // onStartCommand always called when app is brought to foreground, because always startService gets called.
+        //      But there should be no problem about it, because the service doesn't get resetted or so,
+        //      just onStartCommand with the given intent gets called.
         bindService(bleServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
 
         registerReceiver(mBleActivityReceiver, intentFilter);

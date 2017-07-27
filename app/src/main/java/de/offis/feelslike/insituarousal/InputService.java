@@ -17,7 +17,7 @@ import java.util.Random;
 
 public class InputService extends IntentService {
 
-    private Class [] activities = {ArousalInput.class};
+    private Class [] activities = {ArousalInputActivity.class};
     private int [] inputsOrder = {0, 0, 0, 0};
 
     private static final String ACTION_START = "de.offis.contact.moodmessengerinput.action.START";
@@ -94,7 +94,7 @@ public class InputService extends IntentService {
 
         Intent intent = new Intent(this, this.activities[this.activitySelector]);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                startActivity(intent);
+        startActivity(intent);
     }
 
     private void handleNotifyAction() {
@@ -147,7 +147,6 @@ public class InputService extends IntentService {
             alarm.cancel(pendingIntent);
         }else {Log.wtf("InputService", "WTF");}
     }
-
 
     private void throwNotification(Context context, PendingIntent pendingIntent) {
         long[] pattern = {200, 200, 200, 200};

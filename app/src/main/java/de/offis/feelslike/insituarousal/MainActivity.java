@@ -1,5 +1,6 @@
 package de.offis.feelslike.insituarousal;
 
+import android.app.ActivityManager;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -7,6 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,12 +16,16 @@ import android.widget.Toast;
 
 import de.offis.feelslike.insituarousal.bleservice.BleService;
 
-
-public class MainActivity extends ActionBarActivity implements View.OnClickListener {
+public class MainActivity extends BleActivity implements View.OnClickListener {
 
     private Intent intent;
     private PendingIntent pendingIntent;
     private AlarmManager alarm;
+
+    @Override
+    void handlePushNotification(Intent intent) {
+        Log.d(TAG, "###### handle push notification");
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +46,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
         EditText txt = (EditText)this.findViewById(R.id.txtuid);
         txt.setText(userID+"");
+
+//        startService(new Intent(this, TestService.class));
     }
 
     @Override
@@ -71,7 +79,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 break;
             }
             case R.id.arousal: {
-                Intent intent = new Intent(this, ArousalInput.class);
+                Intent intent = new Intent(this, ArousalInputActivity.class);
                 startActivity(intent);
                 break;
             }
@@ -82,10 +90,27 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
         EditText txt = (EditText)this.findViewById(R.id.txtuid);
         int uid = Integer.parseInt(txt.getText().toString());
-System.out.println("trying to push to github");
+        System.out.println("trying to push to github");
         SharedPreferences sharedPref = getSharedPreferences("MoodMessengerPrefs", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("uid", uid);
         editor.commit();
+    }
+
+    /**
+     * Figure out, if a specified Service is already running.
+     * Solution copied from: https://stackoverflow.com/questions/600207/how-to-check-if-a-service-is-running-on-android
+     *
+     * @param serviceClass
+     * @return
+     */
+    private boolean isServiceRunning(Class<?> serviceClass) {
+        ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+        for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
+            if (serviceClass.getName().equals(service.service.getClassName())) {
+                return true;
+            }
+        }
+        return false;
     }
 }

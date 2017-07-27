@@ -160,7 +160,7 @@ public class DeviceListActivity extends Activity {
             Intent intent = new Intent();
             intent.putExtra(EXTRA_DEVICE_ADDRESS, address);
 
-            // set result and finisch activity
+            // set result and finish activity
             setResult(Activity.RESULT_OK, intent);
             finish();
         }
@@ -285,7 +285,8 @@ public class DeviceListActivity extends Activity {
         if (Build.VERSION.SDK_INT >= 23) {
             int permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION);
             if (permissionCheck != PackageManager.PERMISSION_GRANTED) {
-                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, PERMISSIONS_REQUEST_ACCESS_COARSE_LOCATION);
+                ActivityCompat.requestPermissions(this, new String[]
+                        {Manifest.permission.ACCESS_COARSE_LOCATION}, PERMISSIONS_REQUEST_ACCESS_COARSE_LOCATION);
             }
         }
 
@@ -300,7 +301,8 @@ public class DeviceListActivity extends Activity {
                 }, SCAN_PERIOD);
 
                 List<ScanFilter> filters = new ArrayList<>();
-                filters.add(new ScanFilter.Builder().setServiceUuid(ParcelUuid.fromString(GattAttributes.HEART_RATE_SERVICE)).build());
+                filters.add(new ScanFilter.Builder().setServiceUuid(
+                        ParcelUuid.fromString(GattAttributes.HEART_RATE_SERVICE)).build());
                 Log.d(TAG, "ParcelUUID: " + ParcelUuid.fromString(GattAttributes.HEART_RATE_SERVICE).toString());
                 ScanSettings settings = new ScanSettings.Builder().build();
                 mScanner.startScan(filters, settings, mLeScanCallback);

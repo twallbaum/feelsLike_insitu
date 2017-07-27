@@ -1,59 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="de.offis.feelslike.insituarousal" >
+    package="de.offis.feelslike.insituarousal">
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/luncher"
         android:label="FeelsLikeS1"
-        android:theme="@style/AppTheme" >
-
+        android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name="de.offis.feelslike.insituarousal.MainActivity"
-            android:label="@string/app_name" >
+            android:name=".MainActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".DeviceListActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/select_device"
-            android:theme="@android:style/Theme.Material.Light.Dialog"/>
-
+            android:theme="@android:style/Theme.Material.Light.Dialog" />
         <activity
-            android:name="de.offis.feelslike.insituarousal.ArousalInput"
-            android:label="@string/title_activity_arousalinput" >
-        </activity>
+            android:name=".ArousalInputActivity"
+            android:label="@string/title_activity_arousalinput"></activity>
 
         <service
             android:name=".bleservice.BleService"
-            android:enabled="true"/>
-
+            android:enabled="true" />
         <service
-            android:name="de.offis.feelslike.insituarousal.InputService"
-            android:exported="false" >
-        </service>
-
+            android:name=".TestService"
+            android:enabled="true"/>
+        <service
+            android:name=".InputService"
+            android:exported="false"></service>
         <service
             android:name=".activityService.ActivityDetectionService"
-            android:exported="false">
-        </service>
+            android:exported="false"></service>
+        <service
+            android:name=".SignificantHeartRateDetectorService"
+            android:enabled="true"
+            android:exported="false"/>
 
+        <receiver android:name=".BleConnectionStateReceiver" >
+            <intent-filter>
+                <action android:name="com.example.bluetooth.le.ACTION_GATT_CONNECTED" />
+                <action android:name="com.example.bluetooth.le.ACTION_GATT_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

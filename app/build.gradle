@@ -35,4 +35,6 @@ dependencies {
     compile 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
     compile 'com.android.support:multidex:1.0.0'
     compile 'com.android.support:multidex:1.0.0'
+//    compile group: 'com.oracle.coherence.incubator', name: 'coherence-common', version: '12.2.0'
+//    compile group: 'jpox', name: 'jpox-tangosol', version: '1.1.9'
 }
