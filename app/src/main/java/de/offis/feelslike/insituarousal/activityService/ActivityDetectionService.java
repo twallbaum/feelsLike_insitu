@@ -10,8 +10,6 @@ import com.google.android.gms.location.DetectedActivity;
 import java.util.ArrayList;
 import java.util.List;
 
-import de.offis.feelslike.insituarousal.ArousalInputActivity;
-
 /**
  * Created by twallbaum on 15.05.17.
  */

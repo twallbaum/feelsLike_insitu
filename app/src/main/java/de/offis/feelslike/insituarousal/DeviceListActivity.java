@@ -179,7 +179,6 @@ public class DeviceListActivity extends Activity {
         setResult(Activity.RESULT_CANCELED, new Intent());
 
         // Initialize the button to perform device discovery
-
         mScanButton = (Button) findViewById(R.id.button_scan);
         mScanButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -286,7 +285,10 @@ public class DeviceListActivity extends Activity {
             int permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION);
             if (permissionCheck != PackageManager.PERMISSION_GRANTED) {
                 ActivityCompat.requestPermissions(this, new String[]
-                        {Manifest.permission.ACCESS_COARSE_LOCATION}, PERMISSIONS_REQUEST_ACCESS_COARSE_LOCATION);
+                        {   Manifest.permission.ACCESS_COARSE_LOCATION,
+                            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                            Manifest.permission.READ_EXTERNAL_STORAGE}, //{Manifest.permission.ACCESS_COARSE_LOCATION},
+                        PERMISSIONS_REQUEST_ACCESS_COARSE_LOCATION);
             }
         }
 

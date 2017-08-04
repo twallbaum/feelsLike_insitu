@@ -3,6 +3,42 @@
 
     <item
         is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\10afd34ff250ff7d81a08711f4bb0b12eaccad00\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d2d27edb6fbc12fdf28008cdff920e66f08cf159">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_90d288ce09ab774d30f5898432045780b42ee7a4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\c17e8ba56a0805087c49291451cd4b799b29d769\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="610ae6a6872d9718fc05e2c726758206bd367595">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5266b3488c1b2995b5647ea3ebe39005c9b20429\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\173869d4368420b2ba89bdd8f45fdd8f94c7d8b0\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1b95f2bf44857a158b097e9f80d5d18d69f32584">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2f06b5ed362f74a49831e95b205b72ab30b2a225\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\f9f2041fbecfcc1e10ed272e32d476859268face\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b2b4d3ecd541814f08200f8171def113095d5f39">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_eee26675d81e042df6368c2a83e5f9e710bbe3a0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\QuincyLappie\.android\build-cache\b55983e21869a517e034a3d4b480edb3787a6266\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -21,543 +57,507 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\0ac856e6d052d43957c70ef18a9fa014eb4427a8\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e497beec1953bc6025004086cad474db94bd4d32\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\8f864f1512b7d8cbd18979694a875b72b6399bb1\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="7e0f082141b7aa90aab5d3a47ab09b0edc958f6b">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fc18b1183a63d7641e22daac1ab2dcc163486931\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\03c9abe69b53782f1640b5928811e1b6ec9b40c4\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="dd1d0d84da2cff18f741c63a9c3af7d9aa89fdd6">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_48ddee2399077bc7ac4de26597580f948d03f19c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\73e69798562522e563ba9d313e0d74bbe11801d9\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="143e5647b772c08c9f0d807b24bbc0b05ff6c7d2">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a678b790f246f97ada4dc24a1388f4e64f099375\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\c2363553c5959bbd3018e844f3e9fcd6064a630c\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="93094dbb2af50e23339620bebd7b4b6161410edb">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5989bdca8708310dc2d956b06c708caca0965d3d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\f179d5b508a0eee10b110666e0995d375f234d0f\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a4124823dc8fff79649224d6ae5a9cfce4c18dcc\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\07ae8d1818725afaf09cc5828adae4afc601ccab\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d2d27edb6fbc12fdf28008cdff920e66f08cf159">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3f7d4023641dc5267d0856b57c58b069e3054c1f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\282196c901df580abb3b5901955077b431bfb3f1\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c76804333008c855433cad5cfd1256e86045e97b">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_86c396910a2cb5da9c892e469bd2fe198c0e6445\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\1954da35c7d3113195bba22885b0905ff76eebc0\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="90236fba9ac4dfb1f4196e231aab964522143ef6">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2eb891d5fa9743c34f2a755283552ea140bde449\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\4da4951554f9ba2ffdb1a5ac53da939c7e777d6c\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="32aa1b2a2f68f455403d10d41d8ded37c9812f11">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7b0eface9992e5bd25ba1b3f07801d0bdc05d639\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\10146f421ade104b67202af6fc7bc3cbfd3b0897\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8748e15968514ff1708deb3bb7f0c17623e50bbb">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_95fe87999e20ff0785e6395bb308a4b291025757\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\dd06f6e7bd267885d90c61780718e74a2f32f4b8\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8fdf15d202000492aefe43092b21af5332df0178">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e40742d2d473d88ecc0f0ffe0a299d9bf631d2f9\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\e80aed8a42a6642c06da9df67a35e2e282c2b3c4\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="2188ba20a948ec6e7fa671b818c69d876d8bf32d">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_419428722597d757971e7c2e28e971448b705420\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\6ae5e2f16fbacb5d8b7e7b0705e9a5de97962f44\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c01990d0a9bbc67f4c2b9610c1170046c2e37b3e">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_23b902c68779890c1d9a8d602aaede91cc9d4237\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\c9513510ccd1ce19125dd650e7217b377f0448c5\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="2ed7ba48801a0a361727833ade3b6cf096968cc0">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3597482178a1baab0e82fa1c145d73b9caeca6b9\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\8d863e6a5eb22a9f8f59df04385554a18cf72016\output\jars\classes.jar"
+        jar="C:\Users\QuincyLappie\.android\build-cache\5b33e5192acb5b00159baf01453fad4cc80897e1\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="80ecaefc1035fde747999e4c20e18d207363efa2">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_713aa29dbf1fc8d22c5778937a2cbada8bda2d22\classes.dex" />
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_037dd4e56a057a41e35c9d80c8e5ac445911412e\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="D:\Uni\AndroidStudio\SDKs\extras\android\m2repository\com\android\support\support-annotations\24.1.1\support-annotations-24.1.1.jar"
+        jar="C:\Users\QuincyLappie\.android\build-cache\e24f7c96a1ad5c5792c149fd1e6b1c06aafccb45\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.1.1_41ca8f0aff19615c3ac47fc76552ca58e581fb63\classes.dex" />
+        sha1="90236fba9ac4dfb1f4196e231aab964522143ef6">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_570a3851ac7774bcee2a35a0524bd486b5f8e897\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\65e20e30255c73dfc86d8e7d6c83f9e8538957ad\output\jars\classes.jar"
+        jar="C:\Users\QuincyLappie\.android\build-cache\70eeef90ffe7cc50e01a9f0dd7367f4cff5147fa\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="688809418e4c2b5014a028c02708d6aeaba466ff">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e53a19f24f14a79f35db261bb2845cc9a937de3a\classes.dex" />
+        sha1="c76804333008c855433cad5cfd1256e86045e97b">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bfbf90c3e0856af0e7dfb765f1d212b6172bf6ef\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\fc99ae9caab6afd2276a0de81c5a586fe7f00707\output\jars\libs\internal_impl-24.1.1.jar"
+        jar="C:\Users\QuincyLappie\.android\build-cache\e8559b1904caee382273018e595b267c04a88e61\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.1.1_02713105946ecd0e9745f2eea22e6da6129c91f4\classes.dex" />
+        sha1="c01990d0a9bbc67f4c2b9610c1170046c2e37b3e">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ba5fa4bb0c34b972fdf76d6fda2618e96688f34c\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\993000d07ddb7ebd3c5b648e7c7391dbb0785150\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="1b95f2bf44857a158b097e9f80d5d18d69f32584">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cadf65cf233e441c1bac4e4306cab649761f68ad\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\58e97fe47b45624a4d5d7aa508a3558dfd45be65\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="acc7a846f0bc56ecccda535fc919fd338b2b3e2c">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4af015062d14c699421413e2a4489f3157825b9a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\fc99ae9caab6afd2276a0de81c5a586fe7f00707\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6d7d803871e3203465f71a163e7af104f807b446">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7cf9b3c1db2a30a910c44d6017d47aa67075f988\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\ca9261c65308df48405c1d4aec3ff70ceb928d8b\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="787871951412550519b0222aba3c9df4cea49875">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e7e8e18f2ff9e3f81d53695f4135762f37819aa3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\42458f16d83b727d6cd138c55aef48e9e4636d8a\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6b8d1a53648f7ecfe9e7bf0baf9ca657c5a1ff91">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_be5da64e37c576fc12308aaaaecc9369add3b981\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\be0704ec1d7023e34ac8b13c44223da0dbc20d3e\output\jars\classes.jar"
+        jar="C:\Users\QuincyLappie\.android\build-cache\be5c89cf2499106892792c18e270ff90b00e0d11\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="d66b8668122393a15c90471c5c974c25439d193a">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b7a23b8762761a368ff8d4924fc0a4882d75e52b\classes.dex" />
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3f14d850423e0d48feefe1cc40858b48638735a6\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\1ae692d80d4198126a15e953e2306ad206778e5a\output\jars\classes.jar"
+        jar="E:\AndroidSDKs\extras\android\m2repository\com\android\support\support-annotations\24.1.1\support-annotations-24.1.1.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="a9c8affe1f564ec0d063be68469d26e972455217">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ae7869c30568c434979be11c53f091ea3f58057c\classes.dex" />
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.1.1_702c45b4d9c38f1cd04e6ce2fb7dc35e0542fc9b\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\2eefb4ff249af2fdf259d0b14b8849c004d36c31\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="701c58abf53f488bc5bb0162f1305a38a32fb5f1">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_25523b62ebb512b3ce1d594c722e631ccdbaa4c6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\0c5e81de73174a501633b28b616b11a5a07b2539\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="fe159787dd4c4bc9ed6a9d4f7430e9af1f3516c8">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_98a62e4488f3ece714ee6236a76280f07b42097b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\30420e0173ebac6d804f8db8e694b473d76c1967\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="88ae4c6ceaeab7beca5e396e0698c6958e26a2d2">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_149d21b70038c40aa990a419e5092ad611205094\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\f0580e2e45fa4d0c275ebb90477ffcd57d2e3479\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9ed08fab37c3a572da1d9ed2bf2e36c8d3e2bc48">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3664a87ec6765d5a3aba70e5629bf47c5070c75b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\f12150ad0de69d8def847864958bdd58aa4036ec\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0e23941db151e67886844de6586e180bb2b860ad">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c7037f7098280c4e1dc1c3a2567ae1618bde2a06\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\6955ed41a5878f46705c9006e744e61646d75914\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4435a2f581b5fa40c417a51efc15c624a841f535\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\e20ba3cf3fdcb461d376abd19bde1ba93129fc9e\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6d0d5e86f5b7203834df01ed78ebfdd5cbf74d48">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5a2242837121cab9adac737bdcbd0942e3311663\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\f0a1cc741eacb83d20bf96097ed88bb09d726afd\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4eeba61bbc47e49a5fbdfd9aa21af5d10bf4df7c">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_53b782833afc78c94de5ad39c2226f9a45ffc555\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\bfeda3ed5894ae0d5068e1933ae50e59553d015a\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6c8a4af7cf76d958c76ed7682f39e4b386b69305">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1e7ab7c00f738995e3ded2ee4c8441a333b1789a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\a887b5efda13f8954320c164f91ce81a3b7245e7\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="657abe17c5ba58f5d24803ba303c6005b180897a">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_41b7824449ae4f46d2fb92dfd85f7fd772c7eb44\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\c15f779a424ce92baabeedacd99df3a4066ab4c0\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5cba8868595f6aaff54cf7d1798591108cf5611c">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_247c11da39f0cf24573c8dfa363043711dd096f4\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\55098eddd09dcdd429c8079f5ed6f5115ad10c30\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6666dd525c3da197e7d07f4f23ef5fc7881a697b">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6f2255fd7266c87efa9c537b5a1d53ac4cbb1901\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\2fd46a6dad7d5ad2575ea98d4f80d403a5738677\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="54933c89f90a872aa342004e82b23e776fe12736">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_de94b948f02df76094a58cef0a74034ab8c559bb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\70f4144c775b656b8765fab3b14c33bdce77fe73\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1c5ebbeac42867be4b5c05c31dcc6f825e0c34c1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\59ba1920de43d64ed26c270df6a059e8b3bf3bb9\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6b8ad09b76c4ffaedf443ca54bc2418760870689">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_81108aa5ce8c491b1124ea359a0c7f493be60076\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\8abad074f36dbf2586ec53c30885b83a12ca4432\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f62e763609f65e47dc6c498760a4accf02776788">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8a586494889a07a849474402c17e034a7384d1a1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\3f7de9ad09af6a6cd752d30ddac640a9caaf273c\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b50fe5288bba9d1635ba619bd3c308319205543e">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a179cb1a228f805d6d944f60aea347d0781eff9e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\5d968ccece3edf8d7e952a47cb6b35d1066895a9\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b2b4d3ecd541814f08200f8171def113095d5f39">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3af1c03517058bcea0a0c6142ce3ddd5e854d922\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\9f0344ac16a4be7898575bfdee8933c23d6577cb\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="dde643ce80b967f869e9b111255815ba4d391653">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_21fb7e2ef0cefdef588961c645bfd09b8797b719\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\d4f91ecd73cd9ccd2f1503a9715cc5b7fc90c092\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="98ac18f891a8279ae57c4771cbf4a2a65f95b04c">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_089268571ce3aa1063913f15907349aaa0bb93d3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\d76026d2f9a0b8681299a5b1035ebf5a44e7e59c\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="aa6a6e385297077a344e0bb95ab6c22f22119261">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2882916f732bb03b0a54894c98145d4d1440e65c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\37835f2a8aa58d4d8348aa53a9fd594afb23b887\output\jars\libs\internal_impl-24.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0_96a451e60911b61b941888b5d9e8a62f69882704\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\37835f2a8aa58d4d8348aa53a9fd594afb23b887\output\jars\classes.jar"
+        jar="C:\Users\QuincyLappie\.android\build-cache\498ceae5cee70f7fa1b8517549b3f11128384d38\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4b4229c1d35e91071f26b217986a7df25858c97e\classes.dex" />
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2b8126e1051d56f2c68f616fe713bd06e5fb67bd\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\dec4be157ad4888698cd42742d2e3c92bd5c6646\output\jars\classes.jar"
+        jar="C:\Users\QuincyLappie\.android\build-cache\384614b1542d7bd597331b1e2c34c6b66972d1e5\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="a75030f7a3f5f96a15acdab44829bed93154d09f">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_afac4d94d50c477fd4a9583471c99d6ab327b275\classes.dex" />
+        sha1="a9c8affe1f564ec0d063be68469d26e972455217">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6758396a44c484dc20ff636dc77f6435bf05a40a\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\51e3aaa1e7a2aa2c4a59d884fed8197437f47fa1\output\jars\classes.jar"
+        jar="C:\Users\QuincyLappie\.android\build-cache\36b18af6d92cb60ee16d872cbab69bc2470edf32\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="02e70fe04e0767ccfa16745b3398816d1171f0ad">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ee67ea5352860e5b715bef3ee025f188cb1e774c\classes.dex" />
+        sha1="6b8d1a53648f7ecfe9e7bf0baf9ca657c5a1ff91">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3f7b38f37e4629d1ad330f864307366775874bee\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\28d89636566df6a1aea7f4835419b15db9f27b08\output\jars\classes.jar"
+        jar="C:\Users\QuincyLappie\.android\build-cache\4d4682938d599c072d202238b8c26777922fc6c2\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="183e4fb7cf95f4fa54963cfcdaf0f4d7e2397bad">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a9649bac0d75cd25ac27e94f6ee59dc460a584c6\classes.dex" />
+        sha1="9ed08fab37c3a572da1d9ed2bf2e36c8d3e2bc48">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_971d57705a01fcc47d5b4dda33846dc0e782af9b\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\7090ecc7681a6aabfc5458409703b44e8ac24af0\output\jars\classes.jar"
+        jar="C:\Users\QuincyLappie\.android\build-cache\542b674370c732603be61b872d6bb78343fae95c\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="5803db663655ef5cb38c6bcb17ba326fdb9edfbd">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_61847bfa2ba5380544548a8c518a8ff60278dcf4\classes.dex" />
+        sha1="5cba8868595f6aaff54cf7d1798591108cf5611c">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0c60fd2e9f994140fc43a855bbc94d6ec950f2a0\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\eedb1cb4f75d79b99237470f806069e5e97e4544\output\jars\classes.jar"
+        jar="C:\Users\QuincyLappie\.android\build-cache\55492c7b780a5d429974858d827017622c3e0c1b\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="287051610dd01cc6eeaed7fc689712c31ad1ff70">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_114e55e32e28643b9e9051b50ac7d08b33188b4f\classes.dex" />
+        sha1="54933c89f90a872aa342004e82b23e776fe12736">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a2722895478736b25ac52b9c0c97dd49bc848c1e\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\1ceb307a0414c685d1cb40ff06f228e5509d18b4\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="29d9916bd9ad8406a53edbafbbce5e18943aa882">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5364908eafe2f8158e2e4e67232cb6a7150cbfa0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\9f635a6f473957f04734ae855440684534086910\output\jars\classes.jar"
+        jar="C:\Users\QuincyLappie\.android\build-cache\88be2243939a83bf0cf8cc7fa9521ba74c93a1e1\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="d72eb1ceff1b0bac4916088eb44bb93f86b1265c">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_99807f6774253444740ee9b64143de63d22b7e5a\classes.dex" />
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4ddcd60daefd6587861de4921d358d9b84542332\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\438f6e5fd648968bf4637b2c023f65839b1c2634\output\jars\classes.jar"
+        jar="C:\Users\QuincyLappie\.android\build-cache\ac306506ca083e96f3e459425aa73fc386bb148c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5803db663655ef5cb38c6bcb17ba326fdb9edfbd">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f542830c9465baa8c7e3ff0ded40eda239a377d7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\54b5851e113e1406479ee4cb13e7abec8eaac120\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="701c58abf53f488bc5bb0162f1305a38a32fb5f1">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a084c4c7b37ab3f44a24b017d8481bdcaa453c69\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\3503d580acd32e2ab6fa7814ce50932fcf88515b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2188ba20a948ec6e7fa671b818c69d876d8bf32d">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f991132904926927b501657e4fcaa668c3c99f3c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\13ba7fad7285f09050bfe3bd687b4e4812e7df4e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="acc7a846f0bc56ecccda535fc919fd338b2b3e2c">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ba8376133ea592a92c885fd8fdef20bd656136e0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\7554deef843beca5e7e927e2dd45069543ac7373\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_696a876fc2edf3b0d24af10b64d0ca1bf7fba75a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\fef6db244826698191e0822c683c16375d4157c2\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fe159787dd4c4bc9ed6a9d4f7430e9af1f3516c8">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_acc6f36bdc1942574934f09e0efe8b549eed0995\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\b90dcd3b6c4c51074566e1c5860f36c41af23d84\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="aa6a6e385297077a344e0bb95ab6c22f22119261">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4822ed508e84a39e1733b52a6b844dc030dcd550\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\ed5c1ea49a6fe25b76ce78384c4f8b18965c9ab6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9a2059bb5037c9a81384055956ab4314e6b4ac0d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\8a78236a9777bf567dc9455b560d37fb3b630702\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="93094dbb2af50e23339620bebd7b4b6161410edb">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5d5c55ae92160d18adf32549c4a0bb9246a6fbd4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\942d82f90336b6bc3524d82847916368230aa4e1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_74b8e6e0e9395dbd4b69a2c11619b34f0a0d33d2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\2e6c219f3f04d87648e29624f063bbff774fb60f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="98ac18f891a8279ae57c4771cbf4a2a65f95b04c">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8033cd8b9bf9e32137d22d4442ac6f28ad7c6fc4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\2ee5f51159de6f9b44d6eb7e7a083b33a6787976\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="657abe17c5ba58f5d24803ba303c6005b180897a">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1d5c1388f6e870646d8ae7721ba87d9e1055f887\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\fdae19395c38090375a027c45820468f5700bf5d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_44ca031e8f95d66abd2b2d3c0789f7e8478279f5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\ce2adcf88d3f6d081ffc6c10d64f7dac6b3e6d35\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="597d0d34e15e713c486e8f4ccf739f0c7d05bde4">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_89e2e1d25e08600f584a7f1f489d50609a5c888d\classes.dex" />
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_304a24999aa3b541dea762b07b02a0a2b233dff9\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\070d205426bc66fa1c1fcdc0debca004e980985e\output\jars\classes.jar"
+        jar="C:\Users\QuincyLappie\.android\build-cache\4913e078775619af7d41c1a12a5aacb0506e4598\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0e23941db151e67886844de6586e180bb2b860ad">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fcff20998b81efde6745667e7fc9e03c3741b713\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\82617e7d08c93a1d37882ebeda21aefdb485ecdc\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="43df709c95f6b0501b3adbc7da992b6a69a03214">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fed5a29fb79ad375195f1b773e1c802b7f0e4370\classes.dex" />
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b30a4bcc00a25ab906411a5aaf44dbbf882f9d0f\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\edf04671e3e75dd59d3aa5c1fcb9911ca6074225\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="610ae6a6872d9718fc05e2c726758206bd367595">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_804c9706d0cede9d93d183eb94642c60cc25488d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\QuincyLappie\.android\build-cache\eef7ea91d17f93760d4a58fa257083e4dde6a5f4\output\jars\classes.jar"
+        jar="C:\Users\QuincyLappie\.android\build-cache\de2756a6cdf043cc392f26db3b8cd049c973293e\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="29e4e634375ab2ed25f8db5387b564c78980422a">
-        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9019621555ed8f729496891a8ac452ae15311fb5\classes.dex" />
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0b2fd4f26fb440df67844ab3d0a486371c0c0910\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\e073cbf8ba6bacf90bd621a3c80446fd1447943d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dde643ce80b967f869e9b111255815ba4d391653">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3b8b56715e5ed7e311a08192b55b967718026a80\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\c43c33b71ee582f47534f35d8cae4c1b43d67820\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f465590524924f3fc2dbb8f601a441ac7508ad26\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\7ffefa5d5017042062d7f272a20c80784b2bd694\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6ff09db51b00fab9682f167ed9d33ff2b5e00e33\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\c584d5220a4efe40eefd0df1eabe503d86764804\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="787871951412550519b0222aba3c9df4cea49875">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4d3fdbfdedd44116297ddf98e76ed99473a30f74\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\67f5284463cea7e64ad11014dab47a5ca6efb5b9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="287051610dd01cc6eeaed7fc689712c31ad1ff70">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cce76d8d2375fda98e7f95328baedd97ad372ef3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\db1ae5daafb1e6bc71360316ff214af5ed21c62f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="02e70fe04e0767ccfa16745b3398816d1171f0ad">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_36c2d18aed31730249ea7f245da33a15980ec3c1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\1ac4d9a60393cd8ea5985e0193d0b3aa3b00ea3c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="688809418e4c2b5014a028c02708d6aeaba466ff">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_37a93bdc46341a97561aabae0168baf5cf38b510\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\764004b78d97a221ee8eee22dffb0980c1be645c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6c8a4af7cf76d958c76ed7682f39e4b386b69305">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c1862eedd0ffa6919a42f4cbc93583e87b6decb9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\8c37a38523bf5974500858c3d960b20db75a0c2b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e0f082141b7aa90aab5d3a47ab09b0edc958f6b">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9611f8e39e19cb7c16fc0db817ddcfdb57565865\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\db892de87fdec8fb93a4812bef6d2ae6969f20b8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2ed7ba48801a0a361727833ade3b6cf096968cc0">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e0d925c438e2063ac8d6370e8981b8702a501b26\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\c6b5e63ee05e580d184748a2f99b07ff99bb05ff\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8fdf15d202000492aefe43092b21af5332df0178">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4a192c40586eb94ec4260b63296457dc5cb71053\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\90b0506971a6621034fa32b269b3e0a90d5de0e2\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="29d9916bd9ad8406a53edbafbbce5e18943aa882">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8597a6bbbb00c71b449d1325489c2c347d91896c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\fb1c1d90803612391a87f91f304a6fe934971f3a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6b8ad09b76c4ffaedf443ca54bc2418760870689">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5f17c5b42a0cdb84596e8b91493e877c79e0dca3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\7e317f454381e8d67787c74a2910fc29ac91e62d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="183e4fb7cf95f4fa54963cfcdaf0f4d7e2397bad">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4238b5014da3a804d9ec5162ae5d36b4b8a6d159\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\57b62afb3520962606d08991724b546435f81af6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="143e5647b772c08c9f0d807b24bbc0b05ff6c7d2">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d8d1d29be673e52363e349f117bac933a47767b6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\557568d31131d942e41830223a2c79472a797478\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4eeba61bbc47e49a5fbdfd9aa21af5d10bf4df7c">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1fbb7326c2be112c5f7cbd78949b0a149ef372d8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\942d82f90336b6bc3524d82847916368230aa4e1\output\jars\libs\internal_impl-24.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.1.1_d9ed7474b59f01296e189014c63a6469e99f37c1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\8c1417ea76278cdf00db9175d5e051d660de96f8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="88ae4c6ceaeab7beca5e396e0698c6958e26a2d2">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fb992062ca9943532d4762513a6465382029825a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\41a3f22227f482cb51d71b83c1e40aff235f26d7\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8748e15968514ff1708deb3bb7f0c17623e50bbb">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5f113d75a8451ad211e4195ec847a2e4aa605c58\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\d9faeee8cb5b9071be7d523f7b625d0b592e671f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dd1d0d84da2cff18f741c63a9c3af7d9aa89fdd6">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9b3e06c1a186d5984e063ca1e1cc0f7928bfc40d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\445ec481725ca70c71396dd1618934152a138a05\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_094e23d435cfd8d73f26397f01f81009f8362bcf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\7f65baf8fbf9312953e623da33b1d115eaef1588\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="32aa1b2a2f68f455403d10d41d8ded37c9812f11">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_64b548f2274800188a997d53e36008b41f08680d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\841f0c46edcddf63bd4c79d8e40d74cd24842ab6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6d0d5e86f5b7203834df01ed78ebfdd5cbf74d48">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3bd6dd1efc308d74681ee60d67018d19d74c6361\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\51f3da59264769b8f2e525ae521d0ab10f5c6566\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b50fe5288bba9d1635ba619bd3c308319205543e">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5c2950cb9ae32bb71e281289d3bf90cd5844f917\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\498ceae5cee70f7fa1b8517549b3f11128384d38\output\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0_072077d39d7342696bf201169d52816ef6208ced\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\QuincyLappie\.android\build-cache\9ce793bc69ed45afcc69e7a4ebe3a475dda33c85\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a75030f7a3f5f96a15acdab44829bed93154d09f">
+        <dex dex="D:\Uni_Oldenburg\HiWi_Torben\GitStuff\feelsLike_insitu\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_55b491e821504c1268cadcdb74054f2a3d1ed06a\classes.dex" />
     </item>
 
 </items>

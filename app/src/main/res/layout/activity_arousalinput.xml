@@ -14,7 +14,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_margin="10dp"
-            tools:context=".ArousalInputActivity">
+            tools:context=".QuestionnaireActivity">
 
         <TextView
             android:layout_width="wrap_content"

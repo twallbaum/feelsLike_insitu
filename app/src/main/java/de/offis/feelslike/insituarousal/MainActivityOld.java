@@ -37,7 +37,7 @@ public class MainActivityOld extends ActionBarActivity implements View.OnClickLi
         SharedPreferences sharedPref = getSharedPreferences("MoodMessengerPrefs", Context.MODE_PRIVATE);
         int userID = sharedPref.getInt("uid", 0);
 
-        EditText txt = (EditText)this.findViewById(R.id.txtuid);
+        EditText txt = (EditText)this.findViewById(R.id.editTextUid);
         txt.setText(userID+"");
     }
 
@@ -70,7 +70,7 @@ public class MainActivityOld extends ActionBarActivity implements View.OnClickLi
                 break;
             }
             case R.id.arousal: {
-                Intent intent = new Intent(this, ArousalInputActivity.class);
+                Intent intent = new Intent(this, QuestionnaireActivity.class);
                 startActivity(intent);
                 break;
             }
@@ -79,7 +79,7 @@ public class MainActivityOld extends ActionBarActivity implements View.OnClickLi
 
     private void saveUid() {
 
-        EditText txt = (EditText)this.findViewById(R.id.txtuid);
+        EditText txt = (EditText)this.findViewById(R.id.editTextUid);
         int uid = Integer.parseInt(txt.getText().toString());
         System.out.println("trying to push to github");
         SharedPreferences sharedPref = getSharedPreferences("MoodMessengerPrefs", Context.MODE_PRIVATE);

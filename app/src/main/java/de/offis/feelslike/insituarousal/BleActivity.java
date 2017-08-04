@@ -44,9 +44,120 @@ import static de.offis.feelslike.insituarousal.bleservice.BleService.EXTRA_DATA;
 public abstract class BleActivity extends AppCompatActivity {
     protected final String TAG = getClass().getName();
 
-    private BleService mService;
+    protected BleService mService;
     private boolean mBound;
-    private ServiceConnection mServiceConnection = new ServiceConnection() {
+
+    private ProgressDialog mProgressDialog;
+    SharedPreferences mPreferences;
+    ActionBar mActionBar;
+    private BleBroadcastReceiver mBleActivityReceiver = new BleBroadcastReceiver();
+    private boolean bleActivityReceiverIsRegistered;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Log.i(TAG, "onCreate()");
+
+        setContentView(R.layout.activity_ble);
+
+        bleActivityReceiverIsRegistered = false;
+
+        mPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        mProgressDialog = new ProgressDialog(this);
+        setActionBar((Toolbar) findViewById(R.id.toolbar));
+        mActionBar = getActionBar();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i(TAG, "onStart()");
+
+//        setupServiceAndReceiver();
+//        resetHearRateViews();
+    }
+
+    protected void setupServiceAndReceiver(){
+        // register for relevant broadcasts
+        IntentFilter intentFilter = new IntentFilter();
+        intentFilter.addAction(BleService.ACTION_GATT_CONNECTED);
+        intentFilter.addAction(BleService.ACTION_DATA_AVAILABLE);
+        intentFilter.addAction(BleService.ACTION_GATT_DISCONNECTED);
+        intentFilter.addAction(BleService.ACTION_GATT_CONNECTING);
+        intentFilter.addAction(BleService.ACTION_GATT_DISCONNECTING);
+        intentFilter.addAction(BleService.ACTION_GATT_SERVICES_DISCOVERED);
+        //intentFilter.addAction(Config.ACTION_PUSH_NOTIFICATION);
+
+        // start BleService
+        Intent bleServiceIntent = new Intent(this, BleService.class);
+        startService(bleServiceIntent);
+        // when only bindService, than still running when minimized, but closing when activity closed
+        // Service not destroyed. seems to just not receive heart rate measurements anymore. Connection closed/disconnected?
+        //      never onDestroy gets called, but the started threads stop. strange....
+        // onStartCommand always called when app is brought to foreground, because always startService gets called.
+        //      But there should be no problem about it, because the service doesn't get resetted or so,
+        //      just onStartCommand with the given intent gets called.
+        bindService(bleServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
+
+        registerReceiver(mBleActivityReceiver, intentFilter);
+        bleActivityReceiverIsRegistered = true;
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i(TAG, "onResume()");
+
+        if(mPreferences.getBoolean(MainActivity.PREFERENCES_STUDY_RUNNING, false)){
+            setupServiceAndReceiver();
+        }
+
+        // clearing the notification tray
+        //NotificationUtils.clearNotifications();
+    }
+
+    @Override
+    protected void onPause() {
+        Log.i(TAG, "onPause()");
+        super.onPause();
+
+        if(mPreferences.getBoolean(MainActivity.PREFERENCES_STUDY_RUNNING, false)){
+            // unregister receiver
+            // First check, if the service is registered at all
+            if(bleActivityReceiverIsRegistered){
+                unregisterReceiver(mBleActivityReceiver);
+                bleActivityReceiverIsRegistered = false;
+            }
+
+            // unbind BleService
+            if (mBound) {
+                unbindService(mServiceConnection);
+            }
+        }
+    }
+
+    @Override
+    protected void onStop() {
+        Log.i(TAG, "onStop()");
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i(TAG, "onDestroy()");
+
+        // time for a new try
+        mPreferences.edit().putBoolean(getString(R.string.pref_key_reconnect), true).apply();
+
+        // dismiss any open progress dialog
+        // TODO check if this is really needed
+        if (mProgressDialog != null) {
+            mProgressDialog.dismiss();
+        }
+    }
+
+    protected ServiceConnection mServiceConnection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
             Log.i(TAG, "onServiceConnected()");
@@ -72,11 +183,6 @@ public abstract class BleActivity extends AppCompatActivity {
             mBound = false;
         }
     };
-
-    private ProgressDialog mProgressDialog;
-    SharedPreferences mPreferences;
-    ActionBar mActionBar;
-    private BleBroadcastReceiver mBleActivityReceiver = new BleBroadcastReceiver();
 
     private void reconnectDevice() {
         String lastDevice = mPreferences.getString(getResources().getString(R.string.pref_key_last_connected_device), null);
@@ -135,7 +241,7 @@ public abstract class BleActivity extends AppCompatActivity {
         mService.disconnect();
     }
 
-    private void disconnectDevice() {
+    protected void disconnectDevice() {
         Log.i(TAG, "disconnectDevice()");
         SharedPreferences.Editor editor = mPreferences.edit();
         editor.remove(getString(R.string.pref_key_last_connected_device));
@@ -145,7 +251,7 @@ public abstract class BleActivity extends AppCompatActivity {
         mService.disconnect();
     }
 
-    private void discoverDevices() {
+    protected void discoverDevices() {
         Log.i(TAG, "discoverDevices()");
         // Launch DeviceListActivity to scan for ble devices and select one or disconnect
         Intent connectIntent = new Intent(this, DeviceListActivity.class);
@@ -154,58 +260,7 @@ public abstract class BleActivity extends AppCompatActivity {
 
     abstract void handlePushNotification(Intent intent);
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        Log.i(TAG, "onCreate()");
 
-        setContentView(R.layout.activity_ble);
-
-        mPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        mProgressDialog = new ProgressDialog(this);
-        setActionBar((Toolbar) findViewById(R.id.toolbar));
-        mActionBar = getActionBar();
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Log.i(TAG, "onStart()");
-
-        // register for relevant broadcasts
-        IntentFilter intentFilter = new IntentFilter();
-        intentFilter.addAction(BleService.ACTION_GATT_CONNECTED);
-        intentFilter.addAction(BleService.ACTION_DATA_AVAILABLE);
-        intentFilter.addAction(BleService.ACTION_GATT_DISCONNECTED);
-        intentFilter.addAction(BleService.ACTION_GATT_CONNECTING);
-        intentFilter.addAction(BleService.ACTION_GATT_DISCONNECTING);
-        intentFilter.addAction(BleService.ACTION_GATT_SERVICES_DISCOVERED);
-        //intentFilter.addAction(Config.ACTION_PUSH_NOTIFICATION);
-
-        // start BleService
-        Intent bleServiceIntent = new Intent(this, BleService.class);
-        startService(bleServiceIntent);
-        // when only bindService, than still running when minimized, but closing when activity closed
-        // Service not destroyed. seems to just not receive heart rate measurements anymore. Connection closed/disconnected?
-        //      never onDestroy gets called, but the started threads stop. strange....
-        // onStartCommand always called when app is brought to foreground, because always startService gets called.
-        //      But there should be no problem about it, because the service doesn't get resetted or so,
-        //      just onStartCommand with the given intent gets called.
-        bindService(bleServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
-
-        registerReceiver(mBleActivityReceiver, intentFilter);
-
-        resetHearRateViews();
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.i(TAG, "onResume()");
-
-        // clearing the notification tray
-        //NotificationUtils.clearNotifications();
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -245,13 +300,13 @@ public abstract class BleActivity extends AppCompatActivity {
 //                Intent settingsIntent = new Intent(this, SettingsActivity.class);
 //                startActivity(settingsIntent);
 //                return true;
-            case R.id.menu_connect:
-                if (mService.getConnectionState() == BleService.STATE_CONNECTED) {
-                    disconnectDevice();
-                } else {
-                    discoverDevices();
-                }
-                return true;
+//            case R.id.menu_connect:
+//                if (mService.getConnectionState() == BleService.STATE_CONNECTED) {
+//                    disconnectDevice();
+//                } else {
+//                    discoverDevices();
+//                }
+//                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -278,41 +333,6 @@ public abstract class BleActivity extends AppCompatActivity {
                 break;
         }
         super.onActivityResult(requestCode, resultCode, data);
-    }
-
-    @Override
-    protected void onPause() {
-        Log.i(TAG, "onPause()");
-        super.onPause();
-    }
-
-    @Override
-    protected void onStop() {
-        Log.i(TAG, "onStop()");
-        super.onStop();
-
-        // unregister receiver
-        unregisterReceiver(mBleActivityReceiver);
-
-        // unbind BleService
-        if (mBound) {
-            unbindService(mServiceConnection);
-        }
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.i(TAG, "onDestroy()");
-
-        // time for a new try
-        mPreferences.edit().putBoolean(getString(R.string.pref_key_reconnect), true).apply();
-
-        // dismiss any open progress dialog
-        // TODO check if this is really needed
-        if (mProgressDialog != null) {
-            mProgressDialog.dismiss();
-        }
     }
 
     class BleBroadcastReceiver extends BroadcastReceiver {

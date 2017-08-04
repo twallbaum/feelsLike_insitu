@@ -1,16 +1,16 @@
 <component name="libraryTable">
   <library name="support-v4-24.1.1">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.android/build-cache/fc99ae9caab6afd2276a0de81c5a586fe7f00707/output/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/942d82f90336b6bc3524d82847916368230aa4e1/output/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.android/build-cache/fc99ae9caab6afd2276a0de81c5a586fe7f00707/output/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.android/build-cache/fc99ae9caab6afd2276a0de81c5a586fe7f00707/output/jars/libs/internal_impl-24.1.1.jar!/" />
-      <root url="file://$USER_HOME$/.android/build-cache/fc99ae9caab6afd2276a0de81c5a586fe7f00707/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/942d82f90336b6bc3524d82847916368230aa4e1/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/942d82f90336b6bc3524d82847916368230aa4e1/output/jars/libs/internal_impl-24.1.1.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/942d82f90336b6bc3524d82847916368230aa4e1/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://D:/Uni/AndroidStudio/SDKs/extras/android/m2repository/com/android/support/support-v4/24.1.1/support-v4-24.1.1-sources.jar!/" />
+      <root url="jar://E:/AndroidSDKs/extras/android/m2repository/com/android/support/support-v4/24.1.1/support-v4-24.1.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

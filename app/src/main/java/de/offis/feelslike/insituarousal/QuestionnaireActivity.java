@@ -1,10 +1,7 @@
 package de.offis.feelslike.insituarousal;
 
-import android.app.PendingIntent;
-import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -25,14 +22,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
-
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.PendingResult;
-import com.google.android.gms.common.api.ResultCallback;
-import com.google.android.gms.common.api.Status;
-import com.google.android.gms.location.ActivityRecognition;
-import com.google.android.gms.location.DetectedActivity;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -43,10 +33,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import de.offis.feelslike.insituarousal.activityService.ActivityDetectionService;
 
-
-public class ArousalInputActivity extends AppCompatActivity implements MultiSpinner.MultiSpinnerListener,
+public class QuestionnaireActivity extends AppCompatActivity implements MultiSpinner.MultiSpinnerListener,
         View.OnClickListener, AdapterView.OnItemSelectedListener{
 
     protected static final String TAG = "ArousalInput";
@@ -126,7 +114,7 @@ public class ArousalInputActivity extends AppCompatActivity implements MultiSpin
                     stopTime = System.currentTimeMillis();
                     timeToInput = stopTime - startTime;
 
-                    logActions(getLogStorageDir(ArousalInputActivity.this, "feelslikeinsitu"));
+                    logActions(getLogStorageDir(QuestionnaireActivity.this, "feelslikeinsitu"));
                     finish();
                 }else {
                     Snackbar.make(findViewById(R.id.myCoordinatorLayout), "Please select at least valence and arousal levels.",
@@ -216,7 +204,6 @@ public class ArousalInputActivity extends AppCompatActivity implements MultiSpin
             case R.id.intake:
                 break;
         }
-
     }
 
     @Override
@@ -232,25 +219,66 @@ public class ArousalInputActivity extends AppCompatActivity implements MultiSpin
     private void logActions(File directory) {
         File file = new File(directory, "feelslikeinsitu_" + this.userID +".log");
 
+        // Get additional information from the intent
+        String activityType = "";
+        String notificationType = "";
+        Intent receivedIntent = getIntent();
+        if(receivedIntent != null){
+            Log.d(TAG, "receivedIntent != null");
+            // Get activity type
+            String activityTypeTemp = receivedIntent.getStringExtra(
+                    AnalysisAndNotificationService.EXTRA_ACTIVITY_TYPE);
+            if(activityTypeTemp != null){
+                activityType = activityTypeTemp;
+                Log.d(TAG, "receivedIntent activityType " + activityType);
+            }
+
+            // Get notification type
+            String notificationTypeTemp = receivedIntent.getStringExtra(
+                    AnalysisAndNotificationService.EXTRA_NOTIFICATION_TYPE);
+            if(notificationTypeTemp != null){
+                notificationType = activityTypeTemp;
+                Log.d(TAG, "receivedIntent notificationType " + notificationType);
+            }
+        }
+
         try {
             FileOutputStream fOut = new FileOutputStream(file, true);
 
             OutputStreamWriter osw = new OutputStreamWriter(fOut);
             try {
-                osw.write(this.userID+";"+
-                        this.getCurrentTime()+";"+
-                        this.stopTime+";"+
-                        this.startTime+";"+
-                        this.timeToInput+";"+
-                        //this.getInputMethod()+";"+
-//                        this.fitActivity+"_"+this.lastActivityConf+";"+
-                        this.valanceArousal+";"+
-                        this.locationSpinner.getSelectedItem().toString()+";"+
-                        this.additionalLocation.getText()+";"+
-                        this.accompanySpinner.getSelectedItem().toString()+";"+
-                        this.intakeSpinner.getSelectedItem().toString()+";"+
-                        this.activitySpinner.getSelectedItem().toString()+";"+
-                        this.freeform.getText()+"\n");
+                String content = "";
+                content +=  this.userID+";"+
+                            this.getCurrentTime()+";"+
+                            this.stopTime+";"+
+                            this.startTime+";"+
+                            this.timeToInput+";"+
+                            notificationType+";"+
+                            activityType+";"+
+                            this.valanceArousal+";"+
+                            this.locationSpinner.getSelectedItem().toString()+";"+
+                            this.additionalLocation.getText()+";"+
+                            this.accompanySpinner.getSelectedItem().toString()+";"+
+                            this.intakeSpinner.getSelectedItem().toString()+";"+
+                            this.activitySpinner.getSelectedItem().toString()+";"+
+                            this.freeform.getText()+"\n";
+//                osw.write(
+//                        this.userID+";"+
+//                        this.getCurrentTime()+";"+
+//                        this.stopTime+";"+
+//                        this.startTime+";"+
+//                        this.timeToInput+";"+
+//                        notificationType+";"+
+//                        activityType+";"+
+//                        this.valanceArousal+";"+
+//                        this.locationSpinner.getSelectedItem().toString()+";"+
+//                        this.additionalLocation.getText()+";"+
+//                        this.accompanySpinner.getSelectedItem().toString()+";"+
+//                        this.intakeSpinner.getSelectedItem().toString()+";"+
+//                        this.activitySpinner.getSelectedItem().toString()+";"+
+//                        this.freeform.getText()+"\n");
+                Log.d(TAG, content);
+                osw.write(content);
                 osw.flush();
                 osw.close();
             } catch (IOException e) {
@@ -259,6 +287,8 @@ public class ArousalInputActivity extends AppCompatActivity implements MultiSpin
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
+        Toast.makeText(this, "Added answers to: " + file.getAbsolutePath(), Toast.LENGTH_LONG);
     }
 
     private String getCurrentTime() {

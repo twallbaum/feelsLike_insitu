@@ -6,64 +6,79 @@
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="MoodMessenger Studie - Input"
-        android:id="@+id/textView2"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
+        android:id="@+id/textViewId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="ID"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/textViewTitle"
         android:layout_marginTop="24dp"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <EditText
+        android:id="@+id/editTextUid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/txtuid"
-        android:layout_alignTop="@+id/textView3"
-        android:layout_toRightOf="@+id/textView3"
-        android:layout_toEndOf="@+id/textView3" />
+        android:layout_alignBaseline="@+id/textViewId"
+        android:layout_alignBottom="@+id/textViewId"
+        android:layout_toEndOf="@+id/textViewHeartRate" />
+
+    <TextView
+        android:id="@+id/textViewHeartRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="BLHR"
+        android:layout_below="@+id/editTextUid"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editTextBaselineHeartRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignBaseline="@+id/textViewHeartRate"
+        android:layout_alignBottom="@+id/textViewHeartRate"
+        android:layout_toEndOf="@+id/textViewHeartRate" />
 
     <Button
+        android:id="@+id/starteStudie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Starte Studie"
-        android:id="@+id/starteStudie"
-        android:layout_below="@+id/txtuid"
-        android:layout_alignLeft="@+id/txtuid"
-        android:layout_alignStart="@+id/txtuid"
+        android:layout_below="@+id/editTextBaselineHeartRate"
+        android:layout_alignStart="@+id/editTextBaselineHeartRate"
         android:layout_marginTop="22dp" />
 
     <Button
+        android:id="@+id/stopStudie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Beende Studie"
-        android:id="@+id/stopStudie"
         android:layout_alignTop="@+id/starteStudie"
-        android:layout_toRightOf="@+id/starteStudie"
         android:layout_toEndOf="@+id/starteStudie"
-        android:layout_marginLeft="35dp"
         android:layout_marginStart="35dp" />
 
     <Button
+        android:id="@+id/arousal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Arousal"
-        android:id="@+id/arousal"
-        android:layout_centerVertical="true"/>
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/starteStudie" />
 
 </RelativeLayout>

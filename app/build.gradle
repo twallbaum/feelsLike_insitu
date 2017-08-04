@@ -19,22 +19,25 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:24.0.3'
     compile 'com.android.support:support-v4:24.0.3'
     compile 'com.google.android.gms:play-services:10.2.4'
-
     androidTestCompile 'com.android.support:appcompat-v7:24.1.1'
     compile 'com.android.support:recyclerview-v7:24.1.1'
     compile 'com.android.support:design:24.1.1'
     compile 'com.android.volley:volley:1.0.0'
     compile 'com.android.support:support-v4:24.1.1'
     compile 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
-    compile 'com.android.support:multidex:1.0.0'
-    compile 'com.android.support:multidex:1.0.0'
-//    compile group: 'com.oracle.coherence.incubator', name: 'coherence-common', version: '12.2.0'
-//    compile group: 'jpox', name: 'jpox-tangosol', version: '1.1.9'
+    compile 'com.android.support:multidex:1.0.1'
+    //    compile 'com.android.support:multidex:1.0.0'
+    //    compile group: 'com.oracle.coherence.incubator', name: 'coherence-common', version: '12.2.0'
+    //    compile group: 'jpox', name: 'jpox-tangosol', version: '1.1.9'
 }

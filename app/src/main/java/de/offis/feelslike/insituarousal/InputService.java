@@ -17,7 +17,7 @@ import java.util.Random;
 
 public class InputService extends IntentService {
 
-    private Class [] activities = {ArousalInputActivity.class};
+    private Class [] activities = {QuestionnaireActivity.class};
     private int [] inputsOrder = {0, 0, 0, 0};
 
     private static final String ACTION_START = "de.offis.contact.moodmessengerinput.action.START";

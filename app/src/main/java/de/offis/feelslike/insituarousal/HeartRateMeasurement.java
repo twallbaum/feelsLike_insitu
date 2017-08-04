@@ -9,18 +9,24 @@ public class HeartRateMeasurement implements Comparable<HeartRateMeasurement>{
 
     private double heartRate;
     private long timeStamp;
+    private String activityType;
 
-    public HeartRateMeasurement(double heartRate){
+    public HeartRateMeasurement(long timeStamp, double heartRate, String activityType){
         this.heartRate = heartRate;
         this.timeStamp = System.currentTimeMillis();
+        this.activityType = activityType;
+    }
+
+    public long getTimeStamp() {
+        return timeStamp;
     }
 
     public double getHeartRate() {
         return heartRate;
     }
 
-    public long getTimeStamp() {
-        return timeStamp;
+    public String getActivityType() {
+        return activityType;
     }
 
     @Override

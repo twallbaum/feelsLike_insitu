@@ -19,9 +19,11 @@ public class BleConnectionStateReceiver extends BroadcastReceiver {
         String action = intent.getAction();
         if(action.equals(BleService.ACTION_GATT_CONNECTED)){
             Log.d(TAG, "Ble connected received!!");
-            context.startService(new Intent(context, SignificantHeartRateDetectorService.class));
+            context.startService(new Intent(context, AnalysisAndNotificationService.class));
         } else if(action.equals(BleService.ACTION_GATT_DISCONNECTED)){
             Log.d(TAG, "Ble disconnected received!!");
+            context.stopService(new Intent(context, BleService.class));
+//            context.stopService(new Intent(context, AnalysisAndNotificationService.class));
         }
     }
 }

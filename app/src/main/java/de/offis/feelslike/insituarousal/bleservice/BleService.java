@@ -146,10 +146,13 @@ public class BleService extends Service {
 //        };
 //        t.start();
 
-        Intent notificationIntent = new Intent(this, MainActivity.class);
+//        Intent notificationIntent = new Intent(this, MainActivity.class);
+//        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0,
+//                notificationIntent, 0);
 
+        // Don't do anything, when tapping on the notification
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0,
-                notificationIntent, 0);
+                null, 0);
 
         Notification notification = new NotificationCompat.Builder(this)
                 .setOngoing(true)

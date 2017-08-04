@@ -1,22 +1,29 @@
 package de.offis.feelslike.insituarousal;
 
-import android.app.ActivityManager;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.text.format.Time;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+
 import de.offis.feelslike.insituarousal.bleservice.BleService;
 
 public class MainActivity extends BleActivity implements View.OnClickListener {
+
+    public static final String PREFERENCES_STUDY_RUNNING = "study_running";
 
     private Intent intent;
     private PendingIntent pendingIntent;
@@ -32,11 +39,21 @@ public class MainActivity extends BleActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button starteStudie = (Button)findViewById(R.id.starteStudie);
-        starteStudie.setOnClickListener(this);
+        Button startStudy = (Button)findViewById(R.id.starteStudie);
+        startStudy.setOnClickListener(this);
 
-        Button stopStudie = (Button)findViewById(R.id.stopStudie);
-        stopStudie.setOnClickListener(this);
+        Button stopStudy = (Button)findViewById(R.id.stopStudie);
+        stopStudy.setOnClickListener(this);
+
+//        if(Utils.isServiceRunning(BleService.class, this)){
+//            // Deactivate "Start study", if study is already running
+//            startStudy.setEnabled(false);
+//            stopStudy.setEnabled(true);
+//        } else{
+//            // Deactivate "Stop study", if study isn't running at the moment
+//            startStudy.setEnabled(true);
+//            stopStudy.setEnabled(false);
+//        }
 
         Button arousal = (Button)findViewById(R.id.arousal);
         arousal.setOnClickListener(this);
@@ -44,9 +61,24 @@ public class MainActivity extends BleActivity implements View.OnClickListener {
         SharedPreferences sharedPref = getSharedPreferences("MoodMessengerPrefs", Context.MODE_PRIVATE);
         int userID = sharedPref.getInt("uid", 0);
 
-        EditText txt = (EditText)this.findViewById(R.id.txtuid);
-        txt.setText(userID+"");
+        EditText txtUid = (EditText)this.findViewById(R.id.editTextUid);
+        txtUid.setText(userID+"");
 
+        EditText txtBaselineHeartRate = (EditText)this.findViewById(R.id.editTextBaselineHeartRate);
+        txtBaselineHeartRate.setText("60");
+
+        // Disable according ui elements, if study is already running
+        if(mPreferences.getBoolean(PREFERENCES_STUDY_RUNNING, false)){
+            txtUid.setEnabled(false);
+            txtBaselineHeartRate.setEnabled(false);
+            startStudy.setEnabled(false);
+            stopStudy.setEnabled(true);
+        } else{
+            txtUid.setEnabled(true);
+            txtBaselineHeartRate.setEnabled(true);
+            startStudy.setEnabled(true);
+            stopStudy.setEnabled(false);
+        }
 //        startService(new Intent(this, TestService.class));
     }
 
@@ -55,7 +87,20 @@ public class MainActivity extends BleActivity implements View.OnClickListener {
         switch (v.getId()) {
             case R.id.starteStudie: {
                 this.saveUid();
-                InputService.start(this);
+//                InputService.start(this);
+                // En-/Disable ui elements
+                EditText txtUid = (EditText)this.findViewById(R.id.editTextUid);
+                EditText txtBaselineHeartRate = (EditText)this.findViewById(R.id.editTextBaselineHeartRate);
+                Button startStudy = (Button)findViewById(R.id.starteStudie);
+                Button stopStudy = (Button)findViewById(R.id.stopStudie);
+
+                startStudy.setEnabled(false);
+                stopStudy.setEnabled(true);
+                txtUid.setEnabled(false);
+                txtBaselineHeartRate.setEnabled(false);
+
+                // Mark in preferences, that a study is currently running
+                mPreferences.edit().putBoolean(PREFERENCES_STUDY_RUNNING, true).apply();
 
                 Context context = getApplicationContext();
                 CharSequence text = "study started";
@@ -64,10 +109,39 @@ public class MainActivity extends BleActivity implements View.OnClickListener {
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
 
+                super.setupServiceAndReceiver();
+                super.discoverDevices();
+
+                Log.d(TAG, "study started");
+
+                // Put to onResult...
+                // Write initial data to file (baseline heart rate, start time, id)
+                logInitialData(getLogStorageDir(MainActivity.this, "feelslikeinsitu"));
                 break;
             }
             case R.id.stopStudie: {
-                InputService.stop(this);
+                // En-/Disable ui elements
+                EditText txtUid = (EditText)this.findViewById(R.id.editTextUid);
+                EditText txtBaselineHeartRate = (EditText)this.findViewById(R.id.editTextBaselineHeartRate);
+                Button startStudy = (Button)findViewById(R.id.starteStudie);
+                Button stopStudy = (Button)findViewById(R.id.stopStudie);
+
+                startStudy.setEnabled(true);
+                stopStudy.setEnabled(false);
+                txtUid.setEnabled(true);
+                txtBaselineHeartRate.setEnabled(true);
+//                InputService.stop(this);
+                if(mPreferences.getBoolean(PREFERENCES_STUDY_RUNNING, false)){
+//                    if (mService.getConnectionState() == BleService.STATE_CONNECTED) {
+//                        disconnectDevice();
+//                    }
+                    super.unbindService(super.mServiceConnection);
+                }
+                // Mark in preferences, that a study is currently running
+                mPreferences.edit().putBoolean(PREFERENCES_STUDY_RUNNING, false).apply();
+
+                stopService(new Intent(this, BleService.class));
+                stopService(new Intent(this, AnalysisAndNotificationService.class));
 
                 Context context = getApplicationContext();
                 CharSequence text = "study ended";
@@ -79,7 +153,7 @@ public class MainActivity extends BleActivity implements View.OnClickListener {
                 break;
             }
             case R.id.arousal: {
-                Intent intent = new Intent(this, ArousalInputActivity.class);
+                Intent intent = new Intent(this, QuestionnaireActivity.class);
                 startActivity(intent);
                 break;
             }
@@ -87,30 +161,53 @@ public class MainActivity extends BleActivity implements View.OnClickListener {
     }
 
     private void saveUid() {
-
-        EditText txt = (EditText)this.findViewById(R.id.txtuid);
+        EditText txt = (EditText)this.findViewById(R.id.editTextUid);
         int uid = Integer.parseInt(txt.getText().toString());
-        System.out.println("trying to push to github");
         SharedPreferences sharedPref = getSharedPreferences("MoodMessengerPrefs", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("uid", uid);
         editor.commit();
     }
 
-    /**
-     * Figure out, if a specified Service is already running.
-     * Solution copied from: https://stackoverflow.com/questions/600207/how-to-check-if-a-service-is-running-on-android
-     *
-     * @param serviceClass
-     * @return
-     */
-    private boolean isServiceRunning(Class<?> serviceClass) {
-        ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
-        for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
-            if (serviceClass.getName().equals(service.service.getClassName())) {
-                return true;
+    private void logInitialData(File directory) {
+        SharedPreferences sharedPref = getSharedPreferences("MoodMessengerPrefs", Context.MODE_PRIVATE);
+        int userID = sharedPref.getInt("uid", 0);
+        File file = new File(directory, "feelslikeinsitu_" + userID +".log");
+
+        try {
+            FileOutputStream fOut = new FileOutputStream(file, true);
+
+            OutputStreamWriter osw = new OutputStreamWriter(fOut);
+            try {
+                osw.write(  userID + ";" +
+                            ((EditText)this.findViewById(R.id.editTextBaselineHeartRate)).getText() + ";" +
+                            System.currentTimeMillis()+"\n");
+                osw.flush();
+                osw.close();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
-        return false;
+
+        Toast toast = Toast.makeText(this, "Added answers to: " + file.getAbsolutePath(), Toast.LENGTH_LONG);
+        toast.show();
+    }
+
+    public File getLogStorageDir(Context context, String dirName) {
+        File file = new File(context.getExternalFilesDir(
+                null), dirName);
+        if (!file.mkdirs()) {
+            Log.e("LoggingActivity", "Directory not created");
+        }
+        return file;
+    }
+
+    private String getCurrentTime() {
+        Time today = new Time(Time.getCurrentTimezone());
+        today.setToNow();
+
+        return today.format("%Y%m%dT%H%M%S");
     }
 }

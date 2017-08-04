@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
 
     <application
@@ -32,15 +33,12 @@
             android:label="@string/select_device"
             android:theme="@android:style/Theme.Material.Light.Dialog" />
         <activity
-            android:name=".ArousalInputActivity"
+            android:name=".QuestionnaireActivity"
             android:label="@string/title_activity_arousalinput"></activity>
 
         <service
             android:name=".bleservice.BleService"
             android:enabled="true" />
-        <service
-            android:name=".TestService"
-            android:enabled="true"/>
         <service
             android:name=".InputService"
             android:exported="false"></service>
@@ -48,7 +46,7 @@
             android:name=".activityService.ActivityDetectionService"
             android:exported="false"></service>
         <service
-            android:name=".SignificantHeartRateDetectorService"
+            android:name=".AnalysisAndNotificationService"
             android:enabled="true"
             android:exported="false"/>
 
