@@ -22,12 +22,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 import android.widget.Toolbar;
 
 import java.util.UUID;
 
-import de.offis.feelslike.insituarousal.bleservice.GattAttributes;
+import de.offis.feelslike.insituarousal.DeviceListActivity;
+import de.offis.feelslike.insituarousal.R;
 import de.offis.feelslike.insituarousal.bleservice.BleService;
+import de.offis.feelslike.insituarousal.bleservice.GattAttributes;
 
 import static de.offis.feelslike.insituarousal.bleservice.BleService.EXTRA_DATA;
 
@@ -47,20 +50,12 @@ public abstract class BleActivity extends AppCompatActivity {
     protected BleService mService;
     private boolean mBound;
 
-    private ProgressDialog mProgressDialog;
-    SharedPreferences mPreferences;
-    ActionBar mActionBar;
-    private BleBroadcastReceiver mBleActivityReceiver = new BleBroadcastReceiver();
-    private boolean bleActivityReceiverIsRegistered;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.i(TAG, "onCreate()");
 
         setContentView(R.layout.activity_ble);
-
-        bleActivityReceiverIsRegistered = false;
 
         mPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         mProgressDialog = new ProgressDialog(this);
@@ -73,11 +68,6 @@ public abstract class BleActivity extends AppCompatActivity {
         super.onStart();
         Log.i(TAG, "onStart()");
 
-//        setupServiceAndReceiver();
-//        resetHearRateViews();
-    }
-
-    protected void setupServiceAndReceiver(){
         // register for relevant broadcasts
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction(BleService.ACTION_GATT_CONNECTED);
@@ -100,7 +90,8 @@ public abstract class BleActivity extends AppCompatActivity {
         bindService(bleServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
 
         registerReceiver(mBleActivityReceiver, intentFilter);
-        bleActivityReceiverIsRegistered = true;
+
+        resetHearRateViews();
     }
 
     @Override
@@ -108,56 +99,11 @@ public abstract class BleActivity extends AppCompatActivity {
         super.onResume();
         Log.i(TAG, "onResume()");
 
-        if(mPreferences.getBoolean(MainActivity.PREFERENCES_STUDY_RUNNING, false)){
-            setupServiceAndReceiver();
-        }
-
         // clearing the notification tray
         //NotificationUtils.clearNotifications();
     }
 
-    @Override
-    protected void onPause() {
-        Log.i(TAG, "onPause()");
-        super.onPause();
-
-        if(mPreferences.getBoolean(MainActivity.PREFERENCES_STUDY_RUNNING, false)){
-            // unregister receiver
-            // First check, if the service is registered at all
-            if(bleActivityReceiverIsRegistered){
-                unregisterReceiver(mBleActivityReceiver);
-                bleActivityReceiverIsRegistered = false;
-            }
-
-            // unbind BleService
-            if (mBound) {
-                unbindService(mServiceConnection);
-            }
-        }
-    }
-
-    @Override
-    protected void onStop() {
-        Log.i(TAG, "onStop()");
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.i(TAG, "onDestroy()");
-
-        // time for a new try
-        mPreferences.edit().putBoolean(getString(R.string.pref_key_reconnect), true).apply();
-
-        // dismiss any open progress dialog
-        // TODO check if this is really needed
-        if (mProgressDialog != null) {
-            mProgressDialog.dismiss();
-        }
-    }
-
-    protected ServiceConnection mServiceConnection = new ServiceConnection() {
+    private ServiceConnection mServiceConnection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
             Log.i(TAG, "onServiceConnected()");
@@ -165,10 +111,10 @@ public abstract class BleActivity extends AppCompatActivity {
             mService = binder.getService();
             mBound = true;
             if (!mService.initialize()) {
-                android.util.Log.e(TAG, "Unable to initialize Bluetooth");
+                Log.e(TAG, "Unable to initialize Bluetooth");
                 finish();
             }
-            android.util.Log.i(TAG, "Service successfully connected");
+            Log.i(TAG, "Service successfully connected");
             if (mPreferences.getBoolean(getString(R.string.pref_key_reconnect), true)) {
                 reconnectDevice();
             }
@@ -183,6 +129,11 @@ public abstract class BleActivity extends AppCompatActivity {
             mBound = false;
         }
     };
+
+    private ProgressDialog mProgressDialog;
+    SharedPreferences mPreferences;
+    ActionBar mActionBar;
+    private BleBroadcastReceiver mBleActivityReceiver = new BleBroadcastReceiver();
 
     private void reconnectDevice() {
         String lastDevice = mPreferences.getString(getResources().getString(R.string.pref_key_last_connected_device), null);
@@ -241,7 +192,7 @@ public abstract class BleActivity extends AppCompatActivity {
         mService.disconnect();
     }
 
-    protected void disconnectDevice() {
+    private void disconnectDevice() {
         Log.i(TAG, "disconnectDevice()");
         SharedPreferences.Editor editor = mPreferences.edit();
         editor.remove(getString(R.string.pref_key_last_connected_device));
@@ -300,13 +251,20 @@ public abstract class BleActivity extends AppCompatActivity {
 //                Intent settingsIntent = new Intent(this, SettingsActivity.class);
 //                startActivity(settingsIntent);
 //                return true;
-//            case R.id.menu_connect:
-//                if (mService.getConnectionState() == BleService.STATE_CONNECTED) {
-//                    disconnectDevice();
-//                } else {
-//                    discoverDevices();
-//                }
-//                return true;
+            case R.id.menu_connect:
+                if(!mPreferences.getBoolean(MainActivity.PREFERENCES_STUDY_RUNNING, false)){
+                    if (mService.getConnectionState() == BleService.STATE_CONNECTED) {
+                        disconnectDevice();
+                    } else {
+                        discoverDevices();
+                    }
+                } else{
+                    Toast toast = Toast.makeText(getApplicationContext(),
+                            "Stop study, before canceling and editing belt connection.",
+                            Toast.LENGTH_SHORT);
+                    toast.show();
+                }
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -333,6 +291,41 @@ public abstract class BleActivity extends AppCompatActivity {
                 break;
         }
         super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    @Override
+    protected void onPause() {
+        Log.i(TAG, "onPause()");
+        super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+        Log.i(TAG, "onStop()");
+        super.onStop();
+
+        // unregister receiver
+        unregisterReceiver(mBleActivityReceiver);
+
+        // unbind BleService
+        if (mBound) {
+            unbindService(mServiceConnection);
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i(TAG, "onDestroy()");
+
+        // time for a new try
+        mPreferences.edit().putBoolean(getString(R.string.pref_key_reconnect), true).apply();
+
+        // dismiss any open progress dialog
+        // TODO check if this is really needed
+        if (mProgressDialog != null) {
+            mProgressDialog.dismiss();
+        }
     }
 
     class BleBroadcastReceiver extends BroadcastReceiver {

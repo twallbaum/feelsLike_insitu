@@ -55,8 +55,8 @@ public class MainActivity extends BleActivity implements View.OnClickListener {
 //            stopStudy.setEnabled(false);
 //        }
 
-        Button arousal = (Button)findViewById(R.id.arousal);
-        arousal.setOnClickListener(this);
+//        Button arousal = (Button)findViewById(R.id.arousal);
+//        arousal.setOnClickListener(this);
 
         SharedPreferences sharedPref = getSharedPreferences("MoodMessengerPrefs", Context.MODE_PRIVATE);
         int userID = sharedPref.getInt("uid", 0);
@@ -87,39 +87,38 @@ public class MainActivity extends BleActivity implements View.OnClickListener {
         switch (v.getId()) {
             case R.id.starteStudie: {
                 this.saveUid();
-//                InputService.start(this);
-                // En-/Disable ui elements
-                EditText txtUid = (EditText)this.findViewById(R.id.editTextUid);
-                EditText txtBaselineHeartRate = (EditText)this.findViewById(R.id.editTextBaselineHeartRate);
-                Button startStudy = (Button)findViewById(R.id.starteStudie);
-                Button stopStudy = (Button)findViewById(R.id.stopStudie);
 
-                startStudy.setEnabled(false);
-                stopStudy.setEnabled(true);
-                txtUid.setEnabled(false);
-                txtBaselineHeartRate.setEnabled(false);
+                if (super.mService.getConnectionState() == BleService.STATE_CONNECTED) {
+                    // En-/Disable ui elements
+                    EditText txtUid = (EditText)this.findViewById(R.id.editTextUid);
+                    EditText txtBaselineHeartRate = (EditText)this.findViewById(R.id.editTextBaselineHeartRate);
+                    Button startStudy = (Button)findViewById(R.id.starteStudie);
+                    Button stopStudy = (Button)findViewById(R.id.stopStudie);
 
-                // Mark in preferences, that a study is currently running
-                mPreferences.edit().putBoolean(PREFERENCES_STUDY_RUNNING, true).apply();
+                    startStudy.setEnabled(false);
+                    stopStudy.setEnabled(true);
+                    txtUid.setEnabled(false);
+                    txtBaselineHeartRate.setEnabled(false);
 
-                Context context = getApplicationContext();
-                CharSequence text = "study started";
-                int duration = Toast.LENGTH_SHORT;
+                    // Mark in preferences, that a study is currently running
+                    mPreferences.edit().putBoolean(PREFERENCES_STUDY_RUNNING, true).apply();
 
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
+                    // Write initial data to file (baseline heart rate, start time, id)
+                    logInitialData(getLogStorageDir(MainActivity.this, "feelslikeinsitu"));
 
-                super.setupServiceAndReceiver();
-                super.discoverDevices();
-
-                Log.d(TAG, "study started");
-
-                // Put to onResult...
-                // Write initial data to file (baseline heart rate, start time, id)
-                logInitialData(getLogStorageDir(MainActivity.this, "feelslikeinsitu"));
+                    Toast toast = Toast.makeText(getApplicationContext(), "Study started.", Toast.LENGTH_SHORT);
+                    toast.show();
+                } else{
+                    Toast toast = Toast.makeText(getApplicationContext(),
+                            "Could not start study, because no belt is connected.", Toast.LENGTH_LONG);
+                    toast.show();
+                }
                 break;
             }
             case R.id.stopStudie: {
+                // Mark in preferences, that a study is currently running
+                mPreferences.edit().putBoolean(PREFERENCES_STUDY_RUNNING, false).apply();
+
                 // En-/Disable ui elements
                 EditText txtUid = (EditText)this.findViewById(R.id.editTextUid);
                 EditText txtBaselineHeartRate = (EditText)this.findViewById(R.id.editTextBaselineHeartRate);
@@ -130,31 +129,16 @@ public class MainActivity extends BleActivity implements View.OnClickListener {
                 stopStudy.setEnabled(false);
                 txtUid.setEnabled(true);
                 txtBaselineHeartRate.setEnabled(true);
-//                InputService.stop(this);
-                if(mPreferences.getBoolean(PREFERENCES_STUDY_RUNNING, false)){
-//                    if (mService.getConnectionState() == BleService.STATE_CONNECTED) {
-//                        disconnectDevice();
-//                    }
-                    super.unbindService(super.mServiceConnection);
-                }
-                // Mark in preferences, that a study is currently running
-                mPreferences.edit().putBoolean(PREFERENCES_STUDY_RUNNING, false).apply();
 
-                stopService(new Intent(this, BleService.class));
-                stopService(new Intent(this, AnalysisAndNotificationService.class));
-
-                Context context = getApplicationContext();
-                CharSequence text = "study ended";
-                int duration = Toast.LENGTH_SHORT;
-
-                Toast toast = Toast.makeText(context, text, duration);
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Study started", Toast.LENGTH_SHORT);
                 toast.show();
 
-                break;
-            }
-            case R.id.arousal: {
-                Intent intent = new Intent(this, QuestionnaireActivity.class);
-                startActivity(intent);
+//                mService.disconnect();
+//                super.unbindService(super.mServiceConnection);
+//                stopService(new Intent(this, BleService.class));
+//                stopService(new Intent(this, AnalysisAndNotificationService.class));
+
                 break;
             }
         }
@@ -191,7 +175,7 @@ public class MainActivity extends BleActivity implements View.OnClickListener {
             e.printStackTrace();
         }
 
-        Toast toast = Toast.makeText(this, "Added answers to: " + file.getAbsolutePath(), Toast.LENGTH_LONG);
+        Toast toast = Toast.makeText(this, "Adding log to: " + file.getAbsolutePath(), Toast.LENGTH_LONG);
         toast.show();
     }
 

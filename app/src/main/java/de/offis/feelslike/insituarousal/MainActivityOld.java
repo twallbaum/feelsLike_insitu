@@ -31,8 +31,8 @@ public class MainActivityOld extends ActionBarActivity implements View.OnClickLi
         Button stopStudie = (Button)findViewById(R.id.stopStudie);
         stopStudie.setOnClickListener(this);
 
-        Button arousal = (Button)findViewById(R.id.arousal);
-        arousal.setOnClickListener(this);
+//        Button arousal = (Button)findViewById(R.id.arousal);
+//        arousal.setOnClickListener(this);
 
         SharedPreferences sharedPref = getSharedPreferences("MoodMessengerPrefs", Context.MODE_PRIVATE);
         int userID = sharedPref.getInt("uid", 0);
@@ -69,16 +69,15 @@ public class MainActivityOld extends ActionBarActivity implements View.OnClickLi
 
                 break;
             }
-            case R.id.arousal: {
-                Intent intent = new Intent(this, QuestionnaireActivity.class);
-                startActivity(intent);
-                break;
-            }
+//            case R.id.arousal: {
+//                Intent intent = new Intent(this, QuestionnaireActivity.class);
+//                startActivity(intent);
+//                break;
+//            }
         }
     }
 
     private void saveUid() {
-
         EditText txt = (EditText)this.findViewById(R.id.editTextUid);
         int uid = Integer.parseInt(txt.getText().toString());
         System.out.println("trying to push to github");

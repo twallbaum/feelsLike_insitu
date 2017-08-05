@@ -7,10 +7,12 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.preference.PreferenceManager;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
@@ -37,7 +39,7 @@ public class AnalysisAndNotificationService extends Service
 
     // Variables used for storing the received HeartRateMeasurments
     private static final int BUFFER_SIZE_HEART_RATE_MEASUREMENTS = 60 * 60;
-    private long measurementsCounter = 0L;
+    private long measurementsCounter;
     private ArrayList<HeartRateMeasurement> heartRateMeasurements;
 
     // Variable used for frequently throwing notification,
@@ -79,6 +81,7 @@ public class AnalysisAndNotificationService extends Service
 
         // Check if data from a last session has to be loaded
         heartRateMeasurements = new ArrayList<>();  //loadPersistentHeartRates();
+        measurementsCounter = 0L;
 
         // Register receiver for broadcasts from BleService and ActivityDetectionService
         IntentFilter filter = new IntentFilter();
@@ -110,6 +113,17 @@ public class AnalysisAndNotificationService extends Service
         @Override
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
+            Log.d(TAG, "listSize: " + heartRateMeasurements.size() + " | counter: " + measurementsCounter);
+
+            // If Study isn't activated, discard received intent
+            SharedPreferences mPreferences = PreferenceManager.getDefaultSharedPreferences(
+                    AnalysisAndNotificationService.this);
+            boolean studyIsRunning = mPreferences.getBoolean(MainActivity.PREFERENCES_STUDY_RUNNING, false);
+            if(!studyIsRunning){
+                return;
+            }
+
+            // Handle heart rate update intent
             long timeStampCurrentTime = System.currentTimeMillis();
             if(action.equals(BleService.ACTION_DATA_AVAILABLE)){
                 String heartRate = intent.getStringExtra(BleService.EXTRA_DATA);

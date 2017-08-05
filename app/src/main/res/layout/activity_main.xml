@@ -73,12 +73,12 @@
         android:layout_toEndOf="@+id/starteStudie"
         android:layout_marginStart="35dp" />
 
-    <Button
+    <!--<Button
         android:id="@+id/arousal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Arousal"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/starteStudie" />
+        android:layout_alignStart="@+id/starteStudie" />-->
 
 </RelativeLayout>
