@@ -1,8 +1,10 @@
 package de.offis.feelslike.insituarousal;
 
 import android.app.AlarmManager;
+import android.app.AlertDialog;
 import android.app.PendingIntent;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -119,30 +121,43 @@ public class MainActivity extends BleActivity implements View.OnClickListener {
                 break;
             }
             case R.id.stopStudie: {
-                // Mark in preferences, that a study is currently running
-                mPreferences.edit().putBoolean(PREFERENCES_STUDY_RUNNING, false).apply();
+                new AlertDialog.Builder(this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setTitle("Terminating Study")
+                        .setMessage("Are you sure you want to finish the current study?")
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener()
+                        {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                // Mark in preferences, that a study is currently running
+                                mPreferences.edit().putBoolean(PREFERENCES_STUDY_RUNNING, false).apply();
 
-                // En-/Disable ui elements
-                EditText txtUid = (EditText)this.findViewById(R.id.editTextUid);
-                EditText txtBaselineHeartRate = (EditText)this.findViewById(R.id.editTextBaselineHeartRate);
-                Button startStudy = (Button)findViewById(R.id.starteStudie);
-                Button stopStudy = (Button)findViewById(R.id.stopStudie);
+                                // En-/Disable ui elements
+                                EditText txtUid = (EditText)findViewById(R.id.editTextUid);
+                                EditText txtBaselineHeartRate = (EditText)findViewById(R.id.editTextBaselineHeartRate);
+                                Button startStudy = (Button)findViewById(R.id.starteStudie);
+                                Button stopStudy = (Button)findViewById(R.id.stopStudie);
 
-                startStudy.setEnabled(true);
-                stopStudy.setEnabled(false);
-                txtUid.setEnabled(true);
-                txtBaselineHeartRate.setEnabled(true);
+                                startStudy.setEnabled(true);
+                                stopStudy.setEnabled(false);
+                                txtUid.setEnabled(true);
+                                txtBaselineHeartRate.setEnabled(true);
 
-                Toast toast = Toast.makeText(getApplicationContext(),
-                        "Study stopped", Toast.LENGTH_SHORT);
-                toast.show();
+                                Toast toast = Toast.makeText(getApplicationContext(),
+                                        "Study stopped", Toast.LENGTH_SHORT);
+                                toast.show();
 
 //                mService.disconnect();
 //                super.unbindService(super.mServiceConnection);
 //                stopService(new Intent(this, BleService.class));
 //                stopService(new Intent(this, AnalysisAndNotificationService.class));
-                stopService(new Intent(MainActivity.this, AnalysisAndNotificationService.class));
+                                stopService(new Intent(MainActivity.this, AnalysisAndNotificationService.class));
 
+                            }
+
+                        })
+                        .setNegativeButton("No", null)
+                        .show();
                 break;
             }
         }
@@ -197,5 +212,24 @@ public class MainActivity extends BleActivity implements View.OnClickListener {
         today.setToNow();
 
         return today.format("%Y%m%dT%H%M%S");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        if(!mPreferences.getBoolean(MainActivity.PREFERENCES_STUDY_RUNNING, false)){
+            if (mService.getConnectionState() == BleService.STATE_CONNECTED) {
+                super.disconnectDevice();
+            }
+            stopService(new Intent(this, BleService.class));
+        }
+//        if(!mPreferences.getBoolean(MainActivity.PREFERENCES_STUDY_RUNNING, false)){
+//            if (mService.getConnectionState() == BleService.STATE_CONNECTED) {
+//                disconnectDevice();
+//            } else {
+//                discoverDevices();
+//            }
+//        }
     }
 }

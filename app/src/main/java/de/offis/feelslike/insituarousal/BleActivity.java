@@ -192,7 +192,7 @@ public abstract class BleActivity extends AppCompatActivity {
         mService.disconnect();
     }
 
-    private void disconnectDevice() {
+    protected void disconnectDevice() { //private
         Log.i(TAG, "disconnectDevice()");
         SharedPreferences.Editor editor = mPreferences.edit();
         editor.remove(getString(R.string.pref_key_last_connected_device));
