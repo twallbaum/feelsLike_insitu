@@ -44,7 +44,7 @@ public class AnalysisAndNotificationService extends Service
 
     // Variable used for frequently throwing notification,
     // even if no Significant heart rate could be detected
-    private static final long REGULAR_NOTIFICATION_TIME = 1000L * 30; //1000L * 60 * 60;
+    private static final long REGULAR_NOTIFICATION_TIME = 1000L * 60 * 60;
     private long timeStampLastNotification;
 
     // Variables used for frequently executing the calculation
@@ -117,6 +117,7 @@ public class AnalysisAndNotificationService extends Service
             Log.d(TAG, "listSize: " + heartRateMeasurements.size() + " | counter: " + measurementsCounter);
 
             // If Study isn't activated, discard received intent
+            // ToDo: Maybe this check can be deleted, because service maybe only running when needed
             SharedPreferences mPreferences = PreferenceManager.getDefaultSharedPreferences(
                     AnalysisAndNotificationService.this);
             boolean studyIsRunning = mPreferences.getBoolean(MainActivity.PREFERENCES_STUDY_RUNNING, false);
