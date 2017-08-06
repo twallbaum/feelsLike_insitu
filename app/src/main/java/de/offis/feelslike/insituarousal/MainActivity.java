@@ -103,11 +103,14 @@ public class MainActivity extends BleActivity implements View.OnClickListener {
                     // Mark in preferences, that a study is currently running
                     mPreferences.edit().putBoolean(PREFERENCES_STUDY_RUNNING, true).apply();
 
-                    // Write initial data to file (baseline heart rate, start time, id)
-                    logInitialData(getLogStorageDir(MainActivity.this, "feelslikeinsitu"));
+                    // Start analysis and questionnaire notification service
+                    startService(new Intent(MainActivity.this, AnalysisAndNotificationService.class));
 
                     Toast toast = Toast.makeText(getApplicationContext(), "Study started.", Toast.LENGTH_SHORT);
                     toast.show();
+
+                    // Write initial data to file (baseline heart rate, start time, id)
+                    logInitialData(getLogStorageDir(MainActivity.this, "feelslikeinsitu"));
                 } else{
                     Toast toast = Toast.makeText(getApplicationContext(),
                             "Could not start study, because no belt is connected.", Toast.LENGTH_LONG);
@@ -131,13 +134,14 @@ public class MainActivity extends BleActivity implements View.OnClickListener {
                 txtBaselineHeartRate.setEnabled(true);
 
                 Toast toast = Toast.makeText(getApplicationContext(),
-                        "Study started", Toast.LENGTH_SHORT);
+                        "Study stopped", Toast.LENGTH_SHORT);
                 toast.show();
 
 //                mService.disconnect();
 //                super.unbindService(super.mServiceConnection);
 //                stopService(new Intent(this, BleService.class));
 //                stopService(new Intent(this, AnalysisAndNotificationService.class));
+                stopService(new Intent(MainActivity.this, AnalysisAndNotificationService.class));
 
                 break;
             }

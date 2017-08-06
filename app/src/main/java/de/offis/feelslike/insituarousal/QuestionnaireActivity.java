@@ -216,6 +216,32 @@ public class QuestionnaireActivity extends AppCompatActivity implements MultiSpi
         Log.d(TAG, "selected: " + selected.toString());
     }
 
+//    @Override
+//    protected void onNewIntent(Intent intent) {
+//        super.onNewIntent(intent);
+//        String activityType = "";
+//        String notificationType = "";
+//        Intent receivedIntent = intent;
+//        if(receivedIntent != null){
+//            Log.d(TAG, "receivedIntent != null");
+//            // Get activity type
+//            String activityTypeTemp = receivedIntent.getStringExtra(
+//                    AnalysisAndNotificationService.EXTRA_ACTIVITY_TYPE);
+//            if(activityTypeTemp != null){
+//                activityType = activityTypeTemp;
+//                Log.d(TAG, "receivedIntent activityType " + activityType);
+//            }
+//
+//            // Get notification type
+//            String notificationTypeTemp = receivedIntent.getStringExtra(
+//                    AnalysisAndNotificationService.EXTRA_NOTIFICATION_TYPE);
+//            if(notificationTypeTemp != null){
+//                notificationType = activityTypeTemp;
+//                Log.d(TAG, "receivedIntent notificationType " + notificationType);
+//            }
+//        }
+//    }
+
     private void logActions(File directory) {
         File file = new File(directory, "feelslikeinsitu_" + this.userID +".log");
 
@@ -237,7 +263,7 @@ public class QuestionnaireActivity extends AppCompatActivity implements MultiSpi
             String notificationTypeTemp = receivedIntent.getStringExtra(
                     AnalysisAndNotificationService.EXTRA_NOTIFICATION_TYPE);
             if(notificationTypeTemp != null){
-                notificationType = activityTypeTemp;
+                notificationType = notificationTypeTemp;
                 Log.d(TAG, "receivedIntent notificationType " + notificationType);
             }
         }

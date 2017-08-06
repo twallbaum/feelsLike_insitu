@@ -99,6 +99,7 @@ public class AnalysisAndNotificationService extends Service
     @Override
     public void onDestroy() {
         super.onDestroy();
+        Log.d(TAG, "onDestroy");
 
         // Save current stored heart rate entries history
         // saveHeartRatesPersistent();
@@ -156,17 +157,18 @@ public class AnalysisAndNotificationService extends Service
                     // prompt user notification, to start the questionnaire.
                     if(foundSignificantEntryActivityType != null){
                         // Create an intent for starting the ArousalInput activity.
-                        Intent intentArousalInput = new Intent(AnalysisAndNotificationService.this, QuestionnaireActivity.class);
-                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                        intent.putExtra(EXTRA_ACTIVITY_TYPE, foundSignificantEntryActivityType);
-                        intent.putExtra(EXTRA_NOTIFICATION_TYPE, NOTIFICATION_TYPE_SIGNIFICANT_HEART_RATE);
+                        Intent intentQuestionnaire = new Intent(AnalysisAndNotificationService.this, QuestionnaireActivity.class);
+                        intentQuestionnaire.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                        intentQuestionnaire.putExtra(EXTRA_ACTIVITY_TYPE, foundSignificantEntryActivityType);
+                        intentQuestionnaire.putExtra(EXTRA_NOTIFICATION_TYPE, NOTIFICATION_TYPE_SIGNIFICANT_HEART_RATE);
 
                         // Create a PendingIntent for the created intent.
                         PendingIntent pendingIntentArousalInput =
                                 PendingIntent.getActivity(
                                         AnalysisAndNotificationService.this,
                                         0,
-                                        intentArousalInput,
+                                        intentQuestionnaire,
                                         PendingIntent.FLAG_UPDATE_CURRENT
                                 );
 
@@ -280,17 +282,17 @@ public class AnalysisAndNotificationService extends Service
             if(timeStampCurrentTime - timeStampLastNotification >=
                     REGULAR_NOTIFICATION_TIME){
                 // Create an intent for starting the ArousalInput activity.
-                Intent intentArousalInput = new Intent(AnalysisAndNotificationService.this, QuestionnaireActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                intent.putExtra(EXTRA_ACTIVITY_TYPE, lastActivityType);
-                intent.putExtra(EXTRA_NOTIFICATION_TYPE, NOTIFICATION_TYPE_REGULAR_TIMER);
+                Intent intentQuestionnaire = new Intent(AnalysisAndNotificationService.this, QuestionnaireActivity.class);
+                intentQuestionnaire.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intentQuestionnaire.putExtra(EXTRA_ACTIVITY_TYPE, lastActivityType);
+                intentQuestionnaire.putExtra(EXTRA_NOTIFICATION_TYPE, NOTIFICATION_TYPE_REGULAR_TIMER);
 
                 // Create a PendingIntent for the created intent.
                 PendingIntent pendingIntentArousalInput =
                         PendingIntent.getActivity(
                                 AnalysisAndNotificationService.this,
                                 0,
-                                intentArousalInput,
+                                intentQuestionnaire,
                                 PendingIntent.FLAG_UPDATE_CURRENT
                         );
 
