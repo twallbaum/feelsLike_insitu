@@ -41,37 +41,57 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="BLHR"
+        android:gravity="center"
+        android:layout_alignTop="@+id/startBaselineHRCalculation"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/startBaselineHRCalculation" />
+
+    <Button
+        android:id="@+id/startBaselineHRCalculation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start\nCalculation"
         android:layout_below="@+id/editTextUid"
-        android:layout_marginTop="24dp"
-        android:layout_alignParentStart="true" />
-
-    <EditText
-        android:id="@+id/editTextBaselineHeartRate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:layout_alignBaseline="@+id/textViewHeartRate"
-        android:layout_alignBottom="@+id/textViewHeartRate"
-        android:layout_toEndOf="@+id/textViewHeartRate" />
+        android:layout_toEndOf="@+id/textViewHeartRate"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"/>
 
     <Button
-        android:id="@+id/starteStudie"
+        android:id="@+id/stopBaselineHRCalculation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Starte Studie"
-        android:layout_below="@+id/editTextBaselineHeartRate"
-        android:layout_alignStart="@+id/editTextBaselineHeartRate"
-        android:layout_marginTop="22dp" />
+        android:text="Stop\nCalculation"
+        android:layout_alignTop="@+id/startBaselineHRCalculation"
+        android:layout_toEndOf="@+id/startBaselineHRCalculation"
+        android:layout_marginStart="5dp" />
+
+    <TextView
+        android:id="@+id/textViewBLHRResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BLHR-C: /\nBLHR-M: /"
+        android:gravity="center"
+        android:layout_below="@+id/startBaselineHRCalculation"
+        android:layout_alignStart="@+id/startStudy"
+        android:layout_alignEnd="@+id/stopBaselineHRCalculation" />
 
     <Button
-        android:id="@+id/stopStudie"
+        android:id="@+id/startStudy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Beende Studie"
-        android:layout_alignTop="@+id/starteStudie"
-        android:layout_toEndOf="@+id/starteStudie"
-        android:layout_marginStart="35dp" />
+        android:text="Start Study"
+        android:layout_below="@+id/textViewBLHRResult"
+        android:layout_alignEnd="@+id/startBaselineHRCalculation"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/stopStudy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish Study"
+        android:layout_alignTop="@+id/startStudy"
+        android:layout_toEndOf="@+id/startStudy"
+        android:layout_marginStart="5dp" />
 
     <!--<Button
         android:id="@+id/arousal"

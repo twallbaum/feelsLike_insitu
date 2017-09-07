@@ -30,27 +30,34 @@ import java.util.List;
 
 import de.offis.feelslike.insituarousal.activityService.ActivityDetectionService;
 import de.offis.feelslike.insituarousal.bleservice.BleService;
+import de.offis.feelslike.insituarousal.containers.HeartRateMeasurement;
+import de.offis.feelslike.insituarousal.containers.StatisticalResult;
 
 public class AnalysisAndNotificationService extends Service
         implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener,
         ResultCallback<Status> {
 
-    private static final String TAG = "SigHrtRtDetectorService";
+    private static final String TAG = "AnAndNotService";
 
-    // Variables used for storing the received HeartRateMeasurments
+    // Variables used for storing the received HeartRateMeasurments and statistical values
     private static final int BUFFER_SIZE_HEART_RATE_MEASUREMENTS = 60 * 60;
     private long measurementsCounter;
+    // ToDo: Circular list is way to big overkill. Change to simple queue instead.
     private ArrayList<HeartRateMeasurement> heartRateMeasurements;
+    private static final int BUFFER_SIZE_STATISTICAL_RESULTS = 60 * 60;
+    private long statisticalResultsCounter;
+    // ToDo: Circular list is way to big overkill. Change to simple queue instead.
+    private ArrayList<StatisticalResult> statisticalResults;
+    private static final long STATISTICAL_VALUES_INTERVAL = 1000L * 60 * 2;
+    private static final long STATISTICAL_COMPARISON_TIME_DIFFERENCE = 1000L * 60 * 2;
+    private static final long STATISTICAL_BASED_NOTIFICATION_MINIMUM_TIME_DIFFERENCE = 1000L * 60 * 6;
+    private static final double MRR_FACTOR_THRESHOLD = 1.2;
 
     // Variable used for frequently throwing notification,
     // even if no Significant heart rate could be detected
     private static final long REGULAR_NOTIFICATION_TIME = 1000L * 60 * 60;
-    private long timeStampLastNotification;
-
-    // Variables used for frequently executing the calculation
-    private static final long SIGNIFICANT_HEART_RATE_CALCULATION_INTERVAL = 1000L * 60 * 5;
-    private long timeStampLastCalculation;
-    private static final double RMSSD_THRESHOLD = 99999999.9;
+    private long timeStampLastStatisticalBasedNotification;
+    private long timeStampLastRegularNotification;
 
     // Variables for GoogleApiConnection, used for Activity-Detection
     private GoogleApiClient mGoogleApiClient;
@@ -59,8 +66,9 @@ public class AnalysisAndNotificationService extends Service
     private String lastActivityType = "NOT_YET_INITIALIZED";
     private int lastActivityConf = 0;
     public static final String EXTRA_ACTIVITY_TYPE = "activity_type";
+    public static final String EXTRA_SELECTED_STATISTICAL_RESULTS = "selected_statistical_results";
     public static final String EXTRA_NOTIFICATION_TYPE = "notification_type";
-    public static final String NOTIFICATION_TYPE_SIGNIFICANT_HEART_RATE = "significant_heart_rate";
+    public static final String NOTIFICATION_TYPE_SIGNIFICANT_STATISTICAL_RESULT = "significant_statistical_result";
     public static final String NOTIFICATION_TYPE_REGULAR_TIMER = "regular_timer";
 
     public AnalysisAndNotificationService() {}
@@ -76,12 +84,17 @@ public class AnalysisAndNotificationService extends Service
         super.onCreate();
 
         // Initialize calculation timestamp
-        timeStampLastCalculation = System.currentTimeMillis();
-        timeStampLastNotification = System.currentTimeMillis();
+        timeStampLastStatisticalBasedNotification = System.currentTimeMillis();
+        timeStampLastRegularNotification = System.currentTimeMillis();
 
         // Check if data from a last session has to be loaded
         heartRateMeasurements = new ArrayList<>();  //loadPersistentHeartRates();
         measurementsCounter = 0L;
+//        mrrValues = new ArrayList<>();
+//        sdnnValues = new ArrayList<>();
+//        rmssdValues = new ArrayList<>();
+        statisticalResults = new ArrayList<>();
+        statisticalResultsCounter = 0L;
 
         // Register receiver for broadcasts from BleService and ActivityDetectionService
         IntentFilter filter = new IntentFilter();
@@ -129,7 +142,6 @@ public class AnalysisAndNotificationService extends Service
             long timeStampCurrentTime = System.currentTimeMillis();
             if(action.equals(BleService.ACTION_DATA_AVAILABLE)){
                 String heartRate = intent.getStringExtra(BleService.EXTRA_DATA);
-                Log.d(TAG, "heartRate: " + heartRate);
 
                 if(measurementsCounter >= BUFFER_SIZE_HEART_RATE_MEASUREMENTS){
                     heartRateMeasurements.remove((int)measurementsCounter % BUFFER_SIZE_HEART_RATE_MEASUREMENTS);
@@ -142,27 +154,30 @@ public class AnalysisAndNotificationService extends Service
                                 timeStampCurrentTime,
                                 Double.valueOf(heartRate),
                                 lastActivityType));
+                measurementsCounter++;
 
-                // Compute if a significant heart rate can be found
-                // in the past time window of 60 seconds.
-                // ToDo: Only execute this finding method, if at least n entries are stored
-                // ToDo: Don't execute this finding method, if the user is currently full filling a questionnaire
-                // ToDo: Don't execute this finding method, if there is less than t time passed since the last questionnaire
-                if(timeStampCurrentTime - timeStampLastCalculation
-                        >= SIGNIFICANT_HEART_RATE_CALCULATION_INTERVAL){
-                    String foundSignificantEntryActivityType = findSignificantHeartRateEntry(
-                            timeStampCurrentTime - SIGNIFICANT_HEART_RATE_CALCULATION_INTERVAL,
-                            timeStampCurrentTime);
+                // Update Mrr, Sdnn, rmssd
+                calculateStatisticalResults(timeStampCurrentTime - STATISTICAL_VALUES_INTERVAL,
+                        timeStampCurrentTime);
 
-                    // If any significant entry could be found,
-                    // prompt user notification, to start the questionnaire.
-                    if(foundSignificantEntryActivityType != null){
+                // Check if significant entry is found
+                // Therefore compare current statistical result with statistical result from
+                // 1 minute ago
+                boolean significantDifferenceFound = compareStatisticalResults(timeStampCurrentTime,
+                        timeStampCurrentTime - STATISTICAL_COMPARISON_TIME_DIFFERENCE);
+                if(significantDifferenceFound){
+                    if(timeStampCurrentTime - timeStampLastStatisticalBasedNotification
+                            >= STATISTICAL_BASED_NOTIFICATION_MINIMUM_TIME_DIFFERENCE){
                         // Create an intent for starting the ArousalInput activity.
                         Intent intentQuestionnaire = new Intent(AnalysisAndNotificationService.this, QuestionnaireActivity.class);
                         intentQuestionnaire.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
 //                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
-                        intentQuestionnaire.putExtra(EXTRA_ACTIVITY_TYPE, foundSignificantEntryActivityType);
-                        intentQuestionnaire.putExtra(EXTRA_NOTIFICATION_TYPE, NOTIFICATION_TYPE_SIGNIFICANT_HEART_RATE);
+                        intentQuestionnaire.putExtra(EXTRA_ACTIVITY_TYPE, lastActivityType);
+                        intentQuestionnaire.putExtra(EXTRA_NOTIFICATION_TYPE, NOTIFICATION_TYPE_SIGNIFICANT_STATISTICAL_RESULT);
+                        intentQuestionnaire.putExtra(EXTRA_SELECTED_STATISTICAL_RESULTS,
+                                getStatisticalResultsForTimeWindow(
+                                        timeStampCurrentTime - STATISTICAL_VALUES_INTERVAL,
+                                        timeStampCurrentTime));
 
                         // Create a PendingIntent for the created intent.
                         PendingIntent pendingIntentArousalInput =
@@ -173,37 +188,14 @@ public class AnalysisAndNotificationService extends Service
                                         PendingIntent.FLAG_UPDATE_CURRENT
                                 );
 
+                        // Save current time as last timestamp, when a notification has been thrown
+                        timeStampLastStatisticalBasedNotification = timeStampCurrentTime;
+
                         // Prompt the notification.
-                        timeStampLastNotification = timeStampCurrentTime;
                         AnalysisAndNotificationService.this.throwQuestionnaireNotification(
                                 AnalysisAndNotificationService.this, pendingIntentArousalInput);
                     }
-
-                    // Store the current time stamp, as time stamp for the last executed calculation
-                    timeStampLastCalculation = timeStampCurrentTime;
                 }
-                measurementsCounter++;
-
-//                // ToDo: Only for Debugging
-//                if(measurementsCounter % 30 == 0){
-//                    // Create an intent for starting the ArousalInput activity.
-//                    Intent intentArousalInput = new Intent(AnalysisAndNotificationService.this, ArousalInputActivity.class);
-//                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//
-//                    // Create a PendingIntent for the created intent.
-//                    PendingIntent pendingIntentArousalInput =
-//                            PendingIntent.getActivity(
-//                                    AnalysisAndNotificationService.this,
-//                                    0,
-//                                    intentArousalInput,
-//                                    PendingIntent.FLAG_UPDATE_CURRENT
-//                            );
-//
-//                    // Prompt the notification.
-//                    AnalysisAndNotificationService.this.throwQuestionnaireNotification(
-//                            AnalysisAndNotificationService.this, pendingIntentArousalInput);
-//                }
-//                Log.d(TAG, "measurementsCounter: " + measurementsCounter);
             }
 
             // Handle the Broadcast for the current detected activity from ActivityDetectionService
@@ -280,13 +272,17 @@ public class AnalysisAndNotificationService extends Service
 
             // Throw regular notification, if there wasn't thrown a notification
             // for a specified time
-            if(timeStampCurrentTime - timeStampLastNotification >=
+            if(timeStampCurrentTime - timeStampLastRegularNotification >=
                     REGULAR_NOTIFICATION_TIME){
                 // Create an intent for starting the ArousalInput activity.
                 Intent intentQuestionnaire = new Intent(AnalysisAndNotificationService.this, QuestionnaireActivity.class);
                 intentQuestionnaire.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 intentQuestionnaire.putExtra(EXTRA_ACTIVITY_TYPE, lastActivityType);
                 intentQuestionnaire.putExtra(EXTRA_NOTIFICATION_TYPE, NOTIFICATION_TYPE_REGULAR_TIMER);
+                intentQuestionnaire.putExtra(EXTRA_SELECTED_STATISTICAL_RESULTS,
+                        getStatisticalResultsForTimeWindow(
+                                timeStampCurrentTime - STATISTICAL_VALUES_INTERVAL,
+                                timeStampCurrentTime));
 
                 // Create a PendingIntent for the created intent.
                 PendingIntent pendingIntentArousalInput =
@@ -298,114 +294,44 @@ public class AnalysisAndNotificationService extends Service
                         );
 
                 // Prompt the notification.
-                timeStampLastNotification = timeStampCurrentTime;
+                timeStampLastRegularNotification = timeStampCurrentTime;
                 AnalysisAndNotificationService.this.throwQuestionnaireNotification(
                         AnalysisAndNotificationService.this, pendingIntentArousalInput);
             }
         }
     };
 
-    /**
-     * Test if the can be found a significant heart rate in the
-     * specified time window.
-     *
-     * @param timeStampStart    Start time of the specified time window.
-     * @param timeStampEnd      End time of the specified time window.
-     * @return  Found Activity type if there is a significant heart rate in the specified
-     *          time window, null, if there is none significant heart rate in the specified
-     *          time window.
-     */
-    private String findSignificantHeartRateEntry(long timeStampStart, long timeStampEnd){
-        String foundSignificantEntryType = null;
+    private ArrayList<StatisticalResult> getStatisticalResultsForTimeWindow(
+            long timeStampStart, long timeStampEnd){
+        ArrayList<StatisticalResult> entriesInTimeWindow = new ArrayList<>();
+        for(StatisticalResult result : statisticalResults){
+            if(result.getTimeStamp() >= timeStampStart
+                    && result.getTimeStamp() < timeStampEnd){
+                entriesInTimeWindow.add(result);
+            }
+        }
 
+        // Sort the found entries
+        Collections.sort(entriesInTimeWindow);
+        return entriesInTimeWindow;
+    }
+
+    private void calculateStatisticalResults(long timeStampStart, long timeStampEnd){
         // Find all entries in heartRateMeasurements list, that are within the
         // specified time window.
         // ToDo: There might be more efficient solutions, by using the circular list assumption.
         ArrayList<HeartRateMeasurement> entriesInTimeWindow = new ArrayList<>();
         for(HeartRateMeasurement measurement : heartRateMeasurements){
             if(measurement.getTimeStamp() >= timeStampStart
-                    && measurement.getTimeStamp() < timeStampEnd){
+                    && measurement.getTimeStamp() <= timeStampEnd){
                 entriesInTimeWindow.add(measurement);
             }
         }
+        Log.d(TAG, "calc: heartRateMeasurementsSize: " + heartRateMeasurements.size()
+                + " entriesInTimeWindow: " + entriesInTimeWindow.size());
 
         // Sort the found entries
         Collections.sort(entriesInTimeWindow);
-
-        // Find most used activity type
-        // Order for activityTypeCounter:
-        /*
-            "IN_VEHICLE"
-            "ON_BICYCLE"
-            "ON_FOOT"
-            "RUNNING"
-            "STILL"
-            "TILTING"
-            "WALKING"
-            "UNKNOWN"
-            "UNEXPECTED
-            "NOT_YET_INITIALIZED"
-         */
-        int[] activityTypeCounter = {0,0,0,0,0,0,0,0,0,0};
-        for(HeartRateMeasurement measurement : entriesInTimeWindow){
-            if(measurement.getActivityType().equalsIgnoreCase("IN_VEHICLE")){
-                activityTypeCounter[0]++;
-            } else if(measurement.getActivityType().equalsIgnoreCase("ON_BICYCLE")){
-                activityTypeCounter[0]++;
-            } else if(measurement.getActivityType().equalsIgnoreCase("ON_FOOT")){
-                activityTypeCounter[0]++;
-            } else if(measurement.getActivityType().equalsIgnoreCase("RUNNING")){
-                activityTypeCounter[0]++;
-            } else if(measurement.getActivityType().equalsIgnoreCase("STILL")){
-                activityTypeCounter[0]++;
-            } else if(measurement.getActivityType().equalsIgnoreCase("TILTING")){
-                activityTypeCounter[0]++;
-            } else if(measurement.getActivityType().equalsIgnoreCase("WALKING")){
-                activityTypeCounter[0]++;
-            } else if(measurement.getActivityType().equalsIgnoreCase("UNKNOWN")){
-                activityTypeCounter[0]++;
-            } else if(measurement.getActivityType().equalsIgnoreCase("UNEXPECTED")){
-                activityTypeCounter[0]++;
-            } else if(measurement.getActivityType().equalsIgnoreCase("NOT_YET_INITIALIZED")){
-                activityTypeCounter[0]++;
-            }
-        }
-
-        // Find most used type index
-        int chosenTypeIndex = -1;
-        int chosenTypeCounter = -1;
-        String chosenType = null;
-        for(int i = 0; i < activityTypeCounter.length; i++){
-            if(activityTypeCounter[i] > chosenTypeCounter){
-                chosenTypeIndex = i;
-                chosenTypeCounter = activityTypeCounter[i];
-            }
-        }
-
-        // Convert type index to according type String
-        if(chosenTypeIndex == -1){
-            chosenType = null;
-        } else if(chosenTypeIndex == 0){
-            chosenType = "IN_VEHICLE";
-        } else if(chosenTypeIndex == 1){
-            chosenType = "ON_BICYCLE";
-        } else if(chosenTypeIndex == 2){
-            chosenType = "ON_FOOT";
-        } else if(chosenTypeIndex == 3){
-            chosenType = "RUNNING";
-        } else if(chosenTypeIndex == 4){
-            chosenType = "STILL";
-        } else if(chosenTypeIndex == 5){
-            chosenType = "TILTING";
-        } else if(chosenTypeIndex == 6){
-            chosenType = "WALKING";
-        } else if(chosenTypeIndex == 7){
-            chosenType = "UNKNOWN";
-        } else if(chosenTypeIndex == 8){
-            chosenType = "UNEXPECTED";
-        } else if(chosenTypeIndex == 9){
-            chosenType = "NOT_YET_INITIALIZED";
-        }
 
         // Start calculating statistical values
 
@@ -439,18 +365,70 @@ public class AnalysisAndNotificationService extends Service
         double rmssd = 0;
         for(int i = 2; i < entriesInTimeWindow.size(); i++){
             rmssd += Math.pow(entriesInTimeWindow.get(i).getHeartRate()
-                             - entriesInTimeWindow.get(i-1).getHeartRate(), 2);
+                    - entriesInTimeWindow.get(i-1).getHeartRate(), 2);
         }
         rmssd *= (1.0 / (entriesInTimeWindow.size() - 2));
         rmssd = Math.sqrt(rmssd);
 
-        // Decide, if there was a significant value or not
-        // ToDo: Implement decision making, on the calculated values
-        if(rmssd > RMSSD_THRESHOLD){
-            foundSignificantEntryType = chosenType;
+        // Store result in according Container object, using timestamp from the newest
+        // used HeartRateMeasurement
+
+        // First remove the current entry from the "circular list", if there is already one
+        // at the specified position
+        if(statisticalResultsCounter >= BUFFER_SIZE_STATISTICAL_RESULTS){
+            statisticalResults.remove(
+                    (int)statisticalResultsCounter % BUFFER_SIZE_STATISTICAL_RESULTS);
         }
 
-        return foundSignificantEntryType;
+        // Add new received measurement to list of heart rate measurements.
+        // Use "modulo", to obtain a circular list behavior and entry positioning.
+        statisticalResults.add(
+                (int)(statisticalResultsCounter % BUFFER_SIZE_STATISTICAL_RESULTS),
+                new StatisticalResult(timeStampEnd, mrr, sdnn, rmssd));
+
+        statisticalResultsCounter++;
+    }
+
+    private boolean compareStatisticalResults(long timeStampNewResult, long timeStampOldResult){
+        boolean significantDifferenceFound = false;
+
+        StatisticalResult selectedNewStatisticalResult = null;
+        StatisticalResult selectedOldStatisticalResult = null;
+        long currentSmallestTimeDifferenceNewResult = Long.MAX_VALUE;
+        long currentSmallestTimeDifferenceOldResult = Long.MAX_VALUE;
+        long timeDifference;
+        for(StatisticalResult result : statisticalResults){
+            // Find closest fitting entry for the selected "newResult" timestamp
+            if((timeDifference = Math.abs(result.getTimeStamp() - timeStampNewResult))
+                    < currentSmallestTimeDifferenceNewResult){
+                currentSmallestTimeDifferenceNewResult = timeDifference;
+                selectedNewStatisticalResult = result;
+            }
+
+            // Find closest fitting entry for the selected "oldResult" timestamp
+            if((timeDifference = Math.abs(result.getTimeStamp() - timeStampOldResult))
+                    < currentSmallestTimeDifferenceOldResult){
+                currentSmallestTimeDifferenceOldResult = timeDifference;
+                selectedOldStatisticalResult = result;
+            }
+        }
+
+        if(selectedNewStatisticalResult != null && selectedOldStatisticalResult != null){
+            // Compare selected StatisticalEntries and decide if it shows a significant difference
+            double biggerValue = Math.max(selectedNewStatisticalResult.getMrr(),
+                    selectedOldStatisticalResult.getMrr());
+            double smallerValue = Math.min(selectedNewStatisticalResult.getMrr(),
+                    selectedOldStatisticalResult.getMrr());
+            Log.d(TAG, "statisticalComparison mrr: "
+                    + "old: " + (Math.round(selectedOldStatisticalResult.getMrr() * 1000.0) / 1000.0)
+                    + " new: " + (Math.round(selectedNewStatisticalResult.getMrr() * 1000.0) / 1000.0)
+                    + " ratio: " + (Math.round((biggerValue / smallerValue) * 1000.0) / 1000.0));
+            if(biggerValue / smallerValue > MRR_FACTOR_THRESHOLD){
+                significantDifferenceFound = true;
+            }
+        }
+
+        return significantDifferenceFound;
     }
 
     private void throwQuestionnaireNotification(Context context, PendingIntent pendingIntent) {
@@ -504,60 +482,5 @@ public class AnalysisAndNotificationService extends Service
                     "Activity Recognition failed to start: " + status.getStatusCode() + ", " + status
                             .getStatusMessage());
         }
-    }
-
-    // Unused methods for saving and loading heart rate entries
-
-    private ArrayList<HeartRateMeasurement> loadPersistentHeartRates(){
-        ArrayList<HeartRateMeasurement> measurements = new ArrayList<>();
-
-        // Create a list of HeartRateEntries
-        String fileContent = Utils.readFromFile(this, Utils.HEART_RATE_ENTRIES_FILE_NAME);
-        String[] lines = fileContent.split("\n");
-        for(int i = 1; i < lines.length; i++){
-            String[] line = lines[i].split(",");
-
-            // There might be an empty line at the end, which we don't
-            // want to parse a HeartRateMeasurement from
-            // ToDo: Check if this check is necessary
-            if(line.length == 3){
-                measurements.add(new HeartRateMeasurement(
-                        Long.parseLong(line[0]),
-                        Double.parseDouble(line[1]),
-                        line[2]));
-            }
-        }
-
-        // Sort the created list, according to each entry's timestamp
-        Collections.sort(measurements);
-
-        // Remove the entries, that are to old
-        // An entry is to old, if it's longer away than the calculation
-        // interval length
-        long minimumAllowableTimeStamp = System.currentTimeMillis()
-                - SIGNIFICANT_HEART_RATE_CALCULATION_INTERVAL;
-        for(int i = 0; i < measurements.size();){
-            if(minimumAllowableTimeStamp - measurements.get(i).getTimeStamp() > 0){
-                measurements.remove(i);
-                continue;
-            } else{
-                i++;
-            }
-        }
-
-        return measurements;
-    }
-
-    private void saveHeartRatesPersistent(){
-        // Create content String form HeartRateMeasurments list
-        String content = "timeStamp,heartRate,activityType\n";
-        for(HeartRateMeasurement measurement : heartRateMeasurements){
-            content += measurement.getTimeStamp() + ",";
-            content += measurement.getHeartRate() + ",";
-            content += measurement.getActivityType() + "\n";
-        }
-
-        // Write content to file
-        Utils.writeToFile(content, this, Utils.HEART_RATE_ENTRIES_FILE_NAME);
     }
 }

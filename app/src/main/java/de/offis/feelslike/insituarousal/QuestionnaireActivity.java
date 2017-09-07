@@ -33,6 +33,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import de.offis.feelslike.insituarousal.containers.StatisticalResult;
+
 
 public class QuestionnaireActivity extends AppCompatActivity implements MultiSpinner.MultiSpinnerListener,
         View.OnClickListener, AdapterView.OnItemSelectedListener{
@@ -248,6 +250,8 @@ public class QuestionnaireActivity extends AppCompatActivity implements MultiSpi
         // Get additional information from the intent
         String activityType = "";
         String notificationType = "";
+        String sdnnResults = "";
+        String rmssdResults = "";
         Intent receivedIntent = getIntent();
         if(receivedIntent != null){
             Log.d(TAG, "receivedIntent != null");
@@ -266,6 +270,30 @@ public class QuestionnaireActivity extends AppCompatActivity implements MultiSpi
                 notificationType = notificationTypeTemp;
                 Log.d(TAG, "receivedIntent notificationType " + notificationType);
             }
+
+            // Get statistical results for the last analysed time window
+            ArrayList<StatisticalResult> statisticalResultsTemp = receivedIntent.getParcelableArrayListExtra(
+                    AnalysisAndNotificationService.EXTRA_SELECTED_STATISTICAL_RESULTS);
+            if(statisticalResultsTemp != null){
+                for(int i = 0; i < statisticalResultsTemp.size(); i++){
+                    StatisticalResult result = statisticalResultsTemp.get(i);
+
+                    // Fill sdnn results string, round to 2 decimal points
+                    sdnnResults += Math.round(result.getSdnn()*100.0)/100.0;
+                    if(i < statisticalResultsTemp.size() - 1){
+                        sdnnResults += ",";
+                    }
+
+                    // Fill rmssd results string
+                    rmssdResults += Math.round(result.getRmssd()*100.0)/100.0;
+                    if(i < statisticalResultsTemp.size() - 1){
+                        rmssdResults += ",";
+                    }
+                }
+
+                Log.d(TAG, "receivedIntent sdnnResults: " + sdnnResults);
+                Log.d(TAG, "receivedIntent rmssdResults: " + rmssdResults);
+            }
         }
 
         try {
@@ -281,6 +309,8 @@ public class QuestionnaireActivity extends AppCompatActivity implements MultiSpi
                             this.timeToInput+";"+
                             notificationType+";"+
                             activityType+";"+
+                            sdnnResults+";"+
+                            rmssdResults+";"+
                             this.valanceArousal+";"+
                             this.locationSpinner.getSelectedItem().toString()+";"+
                             this.additionalLocation.getText()+";"+
@@ -288,21 +318,6 @@ public class QuestionnaireActivity extends AppCompatActivity implements MultiSpi
                             this.intakeSpinner.getSelectedItem().toString()+";"+
                             this.activitySpinner.getSelectedItem().toString()+";"+
                             this.freeform.getText()+"\n";
-//                osw.write(
-//                        this.userID+";"+
-//                        this.getCurrentTime()+";"+
-//                        this.stopTime+";"+
-//                        this.startTime+";"+
-//                        this.timeToInput+";"+
-//                        notificationType+";"+
-//                        activityType+";"+
-//                        this.valanceArousal+";"+
-//                        this.locationSpinner.getSelectedItem().toString()+";"+
-//                        this.additionalLocation.getText()+";"+
-//                        this.accompanySpinner.getSelectedItem().toString()+";"+
-//                        this.intakeSpinner.getSelectedItem().toString()+";"+
-//                        this.activitySpinner.getSelectedItem().toString()+";"+
-//                        this.freeform.getText()+"\n");
                 Log.d(TAG, content);
                 osw.write(content);
                 osw.flush();

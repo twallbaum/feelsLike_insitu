@@ -25,10 +25,10 @@ public class MainActivityOld extends ActionBarActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button starteStudie = (Button)findViewById(R.id.starteStudie);
+        Button starteStudie = (Button)findViewById(R.id.startStudy);
         starteStudie.setOnClickListener(this);
 
-        Button stopStudie = (Button)findViewById(R.id.stopStudie);
+        Button stopStudie = (Button)findViewById(R.id.stopStudy);
         stopStudie.setOnClickListener(this);
 
 //        Button arousal = (Button)findViewById(R.id.arousal);
@@ -44,7 +44,7 @@ public class MainActivityOld extends ActionBarActivity implements View.OnClickLi
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.starteStudie: {
+            case R.id.startStudy: {
                 this.saveUid();
                 InputService.start(this);
 
@@ -57,7 +57,7 @@ public class MainActivityOld extends ActionBarActivity implements View.OnClickLi
 
                 break;
             }
-            case R.id.stopStudie: {
+            case R.id.stopStudy: {
                 InputService.stop(this);
 
                 Context context = getApplicationContext();
