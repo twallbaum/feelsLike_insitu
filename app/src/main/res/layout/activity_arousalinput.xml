@@ -124,25 +124,44 @@
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"/>
 
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/location" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout4"
+                android:weightSum="5">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Additional information to location?"
-            android:id="@+id/textView10"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/additionalLocation"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgSl1"
+                    android:layout_weight="1"
+                    android:src="@drawable/sl1"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgSl2"
+                    android:layout_weight="1"
+                    android:src="@drawable/sl2"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgSl3"
+                    android:layout_weight="1"
+                    android:src="@drawable/sl3"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgSl4"
+                    android:layout_weight="1"
+                    android:src="@drawable/sl4"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgSl5"
+                    android:layout_weight="1"
+                    android:src="@drawable/sl5"/>
+            </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
@@ -192,24 +211,12 @@
             android:id="@+id/activity"
             android:layout_marginBottom="50dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Any additional information?"
-            android:id="@+id/textView15"
-            android:layout_marginTop="40dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"/>
-
-        <EditText
-            android:id="@+id/freeform"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="textCapSentences|textMultiLine"
-            android:maxLength="2000"
-            android:maxLines="4" />
+            <EditText
+                android:id="@+id/freeform"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:imeOptions="actionDone" />
 
         <Button
             android:layout_width="wrap_content"

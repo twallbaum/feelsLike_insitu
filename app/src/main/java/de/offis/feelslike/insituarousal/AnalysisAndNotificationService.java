@@ -209,6 +209,7 @@ public class AnalysisAndNotificationService extends Service
                     String currentType = "";
                     DetectedActivity mostConfidentActivity = null;
                     for (DetectedActivity detectedActivity : detectedActivities) {
+                        Log.d("DetectedActivity", "" + detectedActivity.getType());
                         switch (detectedActivity.getType()) {
                             case DetectedActivity.IN_VEHICLE:
                                 currentType = "IN_VEHICLE";

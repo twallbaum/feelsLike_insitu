@@ -15,13 +15,17 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.text.format.Time;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.File;
@@ -37,7 +41,7 @@ import de.offis.feelslike.insituarousal.containers.StatisticalResult;
 
 
 public class QuestionnaireActivity extends AppCompatActivity implements MultiSpinner.MultiSpinnerListener,
-        View.OnClickListener, AdapterView.OnItemSelectedListener{
+        View.OnClickListener, AdapterView.OnItemSelectedListener, TextView.OnEditorActionListener{
 
     protected static final String TAG = "ArousalInput";
 
@@ -50,18 +54,21 @@ public class QuestionnaireActivity extends AppCompatActivity implements MultiSpi
     private MultiSpinner intakeSpinner;
     private Spinner activitySpinner;
     private Spinner locationSpinner;
-    private EditText additionalLocation;
+    //private EditText additionalLocation;
     private EditText freeform;
     private Button btndone;
 
     private boolean valenceSelected = false;
     private boolean arousalSelected = false;
+    private boolean locationSelected = false;
 
     private long startTime;
     private long stopTime;
     private long timeToInput;
     private int userID;
-    public String valanceArousal = "";
+    public int valance = -1;
+    public int arousal = -1;
+    public int location = -1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,19 +91,28 @@ public class QuestionnaireActivity extends AppCompatActivity implements MultiSpi
             view.setTag(id, "aro");
         }
 
+        for (int i = 1; i <= 5; i++) {
+            int id = this.getResources().getIdentifier("imgSl" + i, "id", getPackageName());
+            ImageView view = ((ImageView) findViewById(id));
+            view.setOnClickListener(this);
+            view.setTag("drawable/sl" + i);
+            view.setTag(id, "loc");
+        }
+
+        /*Location
         locationSpinner = (Spinner) findViewById(R.id.location);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.locations, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         locationSpinner.setAdapter(adapter);
-        locationSpinner.setOnItemSelectedListener(this);
+        locationSpinner.setOnItemSelectedListener(this);*/
 
-        additionalLocation = (EditText) findViewById(R.id.additionalLocation);
+        //additionalLocation = (EditText) findViewById(R.id.additionalLocation);
 
         activitySpinner = (Spinner) findViewById(R.id.activity);
         ArrayAdapter<CharSequence> adapterAct = ArrayAdapter.createFromResource(this,
                 R.array.activities, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapterAct.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         activitySpinner.setAdapter(adapterAct);
         activitySpinner.setOnItemSelectedListener(this);
 
@@ -107,6 +123,7 @@ public class QuestionnaireActivity extends AppCompatActivity implements MultiSpi
         intakeSpinner.setItems(itemsIntake, "select options", this);
 
         freeform = (EditText) findViewById(R.id.freeform);
+        freeform.setOnEditorActionListener(this);
 
         btndone = (Button) findViewById(R.id.btndone);
         btndone.setOnClickListener(new View.OnClickListener() {
@@ -136,16 +153,52 @@ public class QuestionnaireActivity extends AppCompatActivity implements MultiSpi
     @Override
     public void onClick(View v) {
         ImageView imageView = (ImageView) v;
+        Log.d(TAG, "test " + v.getId() + "clicked");
+        //this.translateToMood(v);
 
-        this.translateToMood(v);
-
-        if(imageView.getTag(v.getId()).equals("val")) {
-            this.valenceSelected = true;
-        }else if(imageView.getTag(v.getId()).equals("aro")) {
-            this.arousalSelected = true;
+        if(v.getTag(v.getId()).equals("val")){
+            if(this.valance != -1){
+                Log.d(TAG, "test valance already set");
+                int currentId = this.getResources().getIdentifier("imgSv" + this.valance, "id", getPackageName());
+                ImageView currentView = ((ImageView) findViewById(currentId));
+                this.unmarkSelection(currentView);
+                Log.d(TAG, "test" + currentId + " : " + v.getId());
+                if(currentId != v.getId()){
+                    Log.d(TAG, "test not equal, mark the clicked");
+                    this.markSelection(imageView);
+                }
+            } else {
+                this.markSelection(imageView);
+            }
+        } else if(v.getTag(v.getId()).equals("aro")){
+            if(this.arousal != -1){
+                Log.d(TAG, "test arousal already set");
+                int currentId = this.getResources().getIdentifier("imgSa" + this.arousal, "id", getPackageName());
+                ImageView currentView = ((ImageView) findViewById(currentId));
+                this.unmarkSelection(currentView);
+                Log.d(TAG, "test" + currentId + " : " + v.getId());
+                if(currentId != v.getId()){
+                    Log.d(TAG, "test not equal, mark the clicked");
+                    this.markSelection(imageView);
+                }
+            } else {
+                this.markSelection(imageView);
+            }
+        } else if(v.getTag(v.getId()).equals("loc")){
+            if(this.location != -1){
+                Log.d(TAG, "test location already set");
+                int currentId = this.getResources().getIdentifier("imgSl" + this.location, "id", getPackageName());
+                ImageView currentView = ((ImageView) findViewById(currentId));
+                this.unmarkSelection(currentView);
+                Log.d(TAG, "test" + currentId + " : " + v.getId());
+                if(currentId != v.getId()){
+                    Log.d(TAG, "test not equal, mark the clicked");
+                    this.markSelection(imageView);
+                }
+            } else {
+                this.markSelection(imageView);
+            }
         }
-
-        this.markSelection(imageView);
     }
 
     private void markSelection(ImageView v) {
@@ -171,24 +224,61 @@ public class QuestionnaireActivity extends AppCompatActivity implements MultiSpi
         Bitmap tmpbmp = Bitmap.createBitmap(sam.getWidth(), sam.getHeight(), Bitmap.Config.ARGB_8888);
         Canvas c = new Canvas(tmpbmp);
         c.drawBitmap(sam, 0, 0, null);
-        c.drawBitmap(checkmark, 100, 50, paint);
+        c.drawBitmap(checkmark, 0, 0, paint);
+
+        this.translateToMood(v);
+        v.setImageBitmap(tmpbmp);
+        if(v.getTag(v.getId()).equals("val")) {
+            this.valenceSelected = true;
+        }else if(v.getTag(v.getId()).equals("aro")) {
+            this.arousalSelected = true;
+        }else if(v.getTag(v.getId()).equals("loc")) {
+            this.locationSelected = true;
+        }
+    }
+
+    private void unmarkSelection(ImageView v) {
+
+        int imageResource = getResources().getIdentifier(v.getTag().toString(), null, getPackageName());
+
+        Bitmap sam = BitmapFactory.decodeResource(getResources(), imageResource);
+
+        Bitmap tmpbmp = Bitmap.createBitmap(sam.getWidth(), sam.getHeight(), Bitmap.Config.ARGB_8888);
+        Canvas c = new Canvas(tmpbmp);
+        c.drawBitmap(sam, 0, 0, null);
 
         v.setImageBitmap(tmpbmp);
+        if(v.getTag(v.getId()).equals("val")) {
+            this.valenceSelected = false;
+            this.valance = -1;
+        }else if(v.getTag(v.getId()).equals("aro")) {
+            this.arousalSelected = false;
+            this.arousal = -1;
+        }else if(v.getTag(v.getId()).equals("loc")) {
+            this.locationSelected = false;
+            this.location = -1;
+        }
     }
 
     public void translateToMood(View v) {
         switch (v.getId()) {
-            case R.id.imgSv1: this.valanceArousal+="[sv1]";break;
-            case R.id.imgSv2: this.valanceArousal+="[sv2]";break;
-            case R.id.imgSv3: this.valanceArousal+="[sv3]";break;
-            case R.id.imgSv4: this.valanceArousal+="[sv4]";break;
-            case R.id.imgSv5: this.valanceArousal+="[sv5]";break;
+            case R.id.imgSv1: this.valance=1;break;
+            case R.id.imgSv2: this.valance=2;break;
+            case R.id.imgSv3: this.valance=3;break;
+            case R.id.imgSv4: this.valance=4;break;
+            case R.id.imgSv5: this.valance=5;break;
 
-            case R.id.imgSa1: this.valanceArousal+="[sa1]";break;
-            case R.id.imgSa2: this.valanceArousal+="[sa2]";break;
-            case R.id.imgSa3: this.valanceArousal+="[sa3]";break;
-            case R.id.imgSa4: this.valanceArousal+="[sa4]";break;
-            case R.id.imgSa5: this.valanceArousal+="[sa5]";break;
+            case R.id.imgSa1: this.arousal=1;break;
+            case R.id.imgSa2: this.arousal=2;break;
+            case R.id.imgSa3: this.arousal=3;break;
+            case R.id.imgSa4: this.arousal=4;break;
+            case R.id.imgSa5: this.arousal=5;break;
+
+            case R.id.imgSl1: this.location=1;break;
+            case R.id.imgSl2: this.location=2;break;
+            case R.id.imgSl3: this.location=3;break;
+            case R.id.imgSl4: this.location=4;break;
+            case R.id.imgSl5: this.location=5;break;
         }
     }
 
@@ -197,8 +287,8 @@ public class QuestionnaireActivity extends AppCompatActivity implements MultiSpi
         Log.d(TAG, parent.getItemAtPosition(position).toString());
 
         switch(parent.getId()) {
-            case R.id.location:
-                break;
+            //case R.id.location:
+            //    break;
 
             case R.id.activity:
                 break;
@@ -300,6 +390,10 @@ public class QuestionnaireActivity extends AppCompatActivity implements MultiSpi
             FileOutputStream fOut = new FileOutputStream(file, true);
 
             OutputStreamWriter osw = new OutputStreamWriter(fOut);
+            String locationOut = "";
+            if(location != -1){
+                locationOut = getResources().getStringArray(R.array.locations)[location-1]+";";
+            }
             try {
                 String content = "";
                 content +=  this.userID+";"+
@@ -311,12 +405,14 @@ public class QuestionnaireActivity extends AppCompatActivity implements MultiSpi
                             activityType+";"+
                             sdnnResults+";"+
                             rmssdResults+";"+
-                            this.valanceArousal+";"+
-                            this.locationSpinner.getSelectedItem().toString()+";"+
-                            this.additionalLocation.getText()+";"+
+                            "[sv"+this.valance+"]"+
+                            "[sa"+this.arousal+"];"+
+                            locationOut+
+                            //this.locationSpinner.getSelectedItem().toString()+";"+
+                            //this.additionalLocation.getText()+";"+
                             this.accompanySpinner.getSelectedItem().toString()+";"+
                             this.intakeSpinner.getSelectedItem().toString()+";"+
-                            this.activitySpinner.getSelectedItem().toString()+";"+
+                            this.activitySpinner.getSelectedItem().toString()+"\n"+
                             this.freeform.getText()+"\n";
                 Log.d(TAG, content);
                 osw.write(content);
@@ -355,4 +451,15 @@ public class QuestionnaireActivity extends AppCompatActivity implements MultiSpi
         }
         return file;
     }
+
+    @Override
+    public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+        if (actionId == EditorInfo.IME_ACTION_DONE) {
+            InputMethodManager imm = (InputMethodManager)v.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+            return true;
+        }
+        return false;
+    }
+
 }

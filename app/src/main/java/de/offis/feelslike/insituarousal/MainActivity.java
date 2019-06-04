@@ -176,7 +176,7 @@ public class MainActivity extends BleActivity implements View.OnClickListener {
             case R.id.startStudy: {
                 this.saveUid();
 
-                if (super.mService.getConnectionState() == BleService.STATE_CONNECTED) {
+                //if (super.mService.getConnectionState() == BleService.STATE_CONNECTED) {
                     // En-/Disable ui elements
                     EditText txtUid = (EditText)this.findViewById(R.id.editTextUid);
 //                    EditText txtBaselineHeartRate = (EditText)this.findViewById(R.id.editTextBaselineHeartRate);
@@ -199,11 +199,11 @@ public class MainActivity extends BleActivity implements View.OnClickListener {
 
                     // Write initial data to file (baseline heart rate, start time, id)
                     logInitialData(getLogStorageDir(MainActivity.this, "feelslikeinsitu"));
-                } else{
+                /*} else{
                     Toast toast = Toast.makeText(getApplicationContext(),
                             "Could not start study, because no belt is connected.", Toast.LENGTH_LONG);
                     toast.show();
-                }
+                }*/
                 break;
             }
             case R.id.stopStudy: {
